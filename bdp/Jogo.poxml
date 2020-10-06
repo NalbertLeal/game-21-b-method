@@ -1,0 +1,1762 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx"/>
+<Define name="seext"/>
+<Define name="lprp">
+<Attr>
+<Pos l="7" s="4" c="1"/>
+</Attr>
+<Set>
+<Id value="CARDS_TYPES" typref="2615387096" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:1">
+<Attr>
+<Pos l="8" s="11" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="CLUBS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:1">
+<Attr>
+<Pos l="8" s="5" c="19"/>
+</Attr>
+</Id>
+<Id value="DIAMONDS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:2">
+<Attr>
+<Pos l="8" s="8" c="26"/>
+</Attr>
+</Id>
+<Id value="HEARTS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:3">
+<Attr>
+<Pos l="8" s="6" c="36"/>
+</Attr>
+</Id>
+<Id value="SPADES" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:4">
+<Attr>
+<Pos l="8" s="6" c="44"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="CARDS_VALUE" typref="2393683408" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:1">
+<Attr>
+<Pos l="9" s="11" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="ONE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:1">
+<Attr>
+<Pos l="9" s="3" c="19"/>
+</Attr>
+</Id>
+<Id value="TWO" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:2">
+<Attr>
+<Pos l="9" s="3" c="24"/>
+</Attr>
+</Id>
+<Id value="THREE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:3">
+<Attr>
+<Pos l="9" s="5" c="29"/>
+</Attr>
+</Id>
+<Id value="FOUR" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:4">
+<Attr>
+<Pos l="9" s="4" c="36"/>
+</Attr>
+</Id>
+<Id value="FIVE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:5">
+<Attr>
+<Pos l="9" s="4" c="42"/>
+</Attr>
+</Id>
+<Id value="SIX" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:6">
+<Attr>
+<Pos l="9" s="3" c="48"/>
+</Attr>
+</Id>
+<Id value="SAVEN" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:7">
+<Attr>
+<Pos l="9" s="5" c="53"/>
+</Attr>
+</Id>
+<Id value="EIGHT" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:8">
+<Attr>
+<Pos l="9" s="5" c="60"/>
+</Attr>
+</Id>
+<Id value="NINE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:9">
+<Attr>
+<Pos l="9" s="4" c="67"/>
+</Attr>
+</Id>
+<Id value="KING" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:10">
+<Attr>
+<Pos l="9" s="4" c="73"/>
+</Attr>
+</Id>
+<Id value="QUEEN" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:11">
+<Attr>
+<Pos l="9" s="5" c="79"/>
+</Attr>
+</Id>
+<Id value="JACK" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:12">
+<Attr>
+<Pos l="9" s="4" c="86"/>
+</Attr>
+</Id>
+<Id value="ACE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:13">
+<Attr>
+<Pos l="9" s="3" c="92"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:1">
+<Attr>
+<Pos l="10" s="7" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="P_ONE" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:2:1">
+<Attr>
+<Pos l="10" s="5" c="15"/>
+</Attr>
+</Id>
+<Id value="P_TWO" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:2:2">
+<Attr>
+<Pos l="10" s="5" c="22"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos l="15" s="10" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos l="16" s="2" c="9"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:1">
+<Attr>
+<Pos l="16" s="5" c="3"/>
+</Attr>
+</Id>
+<Binary_Exp op="*" typref="1165212998">
+<Attr>
+<Pos l="16" s="1" c="23"/>
+</Attr>
+<Id value="CARDS_TYPES" typref="2615387096" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:2:1">
+<Attr>
+<Pos l="16" s="11" c="12"/>
+</Attr>
+</Id>
+<Id value="CARDS_VALUE" typref="2393683408" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:2:2">
+<Attr>
+<Pos l="16" s="11" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="17" s="1" c="9"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:2:1">
+<Attr>
+<Pos l="17" s="5" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="2846838589">
+<Attr>
+<Pos l="17" s="3" c="11"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:2:2:1">
+<Attr>
+<Pos l="17" s="5" c="15"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="18" s="1" c="15"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="18" s="4" c="3"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="18" s="5" c="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal value="52" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:2">
+<Attr>
+<Pos l="18" s="2" c="17"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="19" s="1" c="18"/>
+</Attr>
+<Id value="PLAYERS_NUMBER" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:4:1">
+<Attr>
+<Pos l="19" s="14" c="3"/>
+</Attr>
+</Id>
+<Integer_Literal value="2" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:4:2">
+<Attr>
+<Pos l="19" s="1" c="20"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="20" s="1" c="23"/>
+</Attr>
+<Id value="NUMBER_INITIAL_HAND" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:5:1">
+<Attr>
+<Pos l="20" s="19" c="3"/>
+</Attr>
+</Id>
+<Integer_Literal value="3" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:5:2">
+<Attr>
+<Pos l="20" s="1" c="25"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inprp"/>
+<Define name="inext"/>
+<Define name="inv">
+<Attr>
+<Pos l="23" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":" initialTag="((deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="24" s="1" c="8"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:1">
+<Attr>
+<Pos l="24" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="24" s="3" c="10"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos l="24" s="5" c="14"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_deck) : (NAT))">
+<Attr>
+<Pos l="25" s="1" c="12"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="25" s="8" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="25" s="3" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((discart_deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="26" s="1" c="16"/>
+</Attr>
+<Id value="discart_deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:1">
+<Attr>
+<Pos l="26" s="12" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="26" s="3" c="18"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:2:1">
+<Attr>
+<Pos l="26" s="5" c="22"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_discart_deck) : (NAT))">
+<Attr>
+<Pos l="27" s="1" c="20"/>
+</Attr>
+<Id value="top_discart_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:1">
+<Attr>
+<Pos l="27" s="16" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:2">
+<Attr>
+<Pos l="27" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_now) : (PLAYERS))">
+<Attr>
+<Pos l="29" s="1" c="14"/>
+</Attr>
+<Id value="player_now" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:1">
+<Attr>
+<Pos l="29" s="10" c="3"/>
+</Attr>
+</Id>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:2">
+<Attr>
+<Pos l="29" s="7" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_one_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="30" s="1" c="19"/>
+</Attr>
+<Id value="player_one_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:1">
+<Attr>
+<Pos l="30" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="30" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:2:1">
+<Attr>
+<Pos l="30" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_two_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="31" s="1" c="19"/>
+</Attr>
+<Id value="player_two_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:1">
+<Attr>
+<Pos l="31" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="31" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:2:1">
+<Attr>
+<Pos l="31" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ass"/>
+<Define name="cst"/>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Attr>
+<Pos l="32" s="14" c="1"/>
+</Attr>
+<Nary_Sub op="||">
+<ANY_Sub normalized="true">
+<Variables>
+<Id value="deck" typref="2892902461" suffix="1" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Pred>
+<Exp_Comparison op=":">
+<Id value="deck" typref="2892902461" suffix="1" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="perm" typref="950679814">
+<Attr>
+<Pos l="33" s="4" c="11"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:2:1:1">
+<Attr>
+<Pos l="33" s="5" c="16"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Pred>
+<Then>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value="deck" typref="2892902461" suffix="1" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+</Then>
+</ANY_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:2:1:1">
+<Attr>
+<Pos l="34" s="8" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Integer_Literal value="0" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:2:2:1">
+<Attr>
+<Pos l="34" s="8" c="3"/>
+</Attr>
+</Integer_Literal>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="discart_deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:3:1:1">
+<Attr>
+<Pos l="35" s="12" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySeq typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:3:2:1">
+<Attr>
+<Pos l="35" s="12" c="3"/>
+</Attr>
+</EmptySeq>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="top_discart_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:4:1:1">
+<Attr>
+<Pos l="36" s="16" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Integer_Literal value="0" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:4:2:1">
+<Attr>
+<Pos l="36" s="16" c="3"/>
+</Attr>
+</Integer_Literal>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="player_now" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:5:1:1">
+<Attr>
+<Pos l="37" s="10" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value="P_ONE" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:5:2:1">
+<Attr>
+<Pos l="37" s="10" c="3"/>
+</Attr>
+</Id>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="player_one_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:6:1:1">
+<Attr>
+<Pos l="38" s="15" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySeq typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:6:2:1">
+<Attr>
+<Pos l="38" s="15" c="3"/>
+</Attr>
+</EmptySeq>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="player_two_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:7:1:1">
+<Attr>
+<Pos l="39" s="15" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySeq typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:7:2:1">
+<Attr>
+<Pos l="39" s="15" c="3"/>
+</Attr>
+</EmptySeq>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="23" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":" initialTag="((deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="24" s="1" c="8"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:1">
+<Attr>
+<Pos l="24" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="24" s="3" c="10"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos l="24" s="5" c="14"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_deck) : (NAT))">
+<Attr>
+<Pos l="25" s="1" c="12"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="25" s="8" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="25" s="3" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((discart_deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="26" s="1" c="16"/>
+</Attr>
+<Id value="discart_deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:1">
+<Attr>
+<Pos l="26" s="12" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="26" s="3" c="18"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:2:1">
+<Attr>
+<Pos l="26" s="5" c="22"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_discart_deck) : (NAT))">
+<Attr>
+<Pos l="27" s="1" c="20"/>
+</Attr>
+<Id value="top_discart_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:1">
+<Attr>
+<Pos l="27" s="16" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:2">
+<Attr>
+<Pos l="27" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_now) : (PLAYERS))">
+<Attr>
+<Pos l="29" s="1" c="14"/>
+</Attr>
+<Id value="player_now" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:1">
+<Attr>
+<Pos l="29" s="10" c="3"/>
+</Attr>
+</Id>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:2">
+<Attr>
+<Pos l="29" s="7" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_one_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="30" s="1" c="19"/>
+</Attr>
+<Id value="player_one_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:1">
+<Attr>
+<Pos l="30" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="30" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:2:1">
+<Attr>
+<Pos l="30" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_two_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="31" s="1" c="19"/>
+</Attr>
+<Id value="player_two_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:1">
+<Attr>
+<Pos l="31" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="31" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:2:1">
+<Attr>
+<Pos l="31" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>getDeckCard</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos l="42" s="1" c="18"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="42" s="8" c="9"/>
+</Attr>
+</Id>
+<Unary_Exp op="size" typref="2701647786">
+<Attr>
+<Pos l="42" s="4" c="20"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:2:1">
+<Attr>
+<Pos l="42" s="4" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="43" s="1" c="20"/>
+</Attr>
+<Binary_Exp op="+" typref="2701647786">
+<Attr>
+<Pos l="43" s="1" c="16"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:1:1">
+<Attr>
+<Pos l="43" s="8" c="7"/>
+</Attr>
+</Id>
+<Integer_Literal value="1" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:1:2">
+<Attr>
+<Pos l="43" s="1" c="18"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:2">
+<Attr>
+<Pos l="43" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op="||">
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="cc" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:1:1">
+<Attr>
+<Pos l="44" s="2" c="10"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="/|\" typref="2892902461">
+<Attr>
+<Pos l="44" s="2" c="10"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:1">
+<Attr>
+<Pos l="44" s="4" c="16"/>
+</Attr>
+</Id>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:2">
+<Attr>
+<Pos l="44" s="8" c="25"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:2:1:1">
+<Attr>
+<Pos l="44" s="8" c="37"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="+" typref="2701647786">
+<Attr>
+<Pos l="44" s="8" c="37"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:2:2:1:1">
+<Attr>
+<Pos l="44" s="8" c="49"/>
+</Attr>
+</Id>
+<Integer_Literal value="1" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:2:2:1:2">
+<Attr>
+<Pos l="44" s="1" c="60"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="23" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":" initialTag="((deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="24" s="1" c="8"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:1">
+<Attr>
+<Pos l="24" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="24" s="3" c="10"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos l="24" s="5" c="14"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_deck) : (NAT))">
+<Attr>
+<Pos l="25" s="1" c="12"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="25" s="8" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="25" s="3" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((discart_deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="26" s="1" c="16"/>
+</Attr>
+<Id value="discart_deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:1">
+<Attr>
+<Pos l="26" s="12" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="26" s="3" c="18"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:2:1">
+<Attr>
+<Pos l="26" s="5" c="22"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((top_discart_deck) : (NAT))">
+<Attr>
+<Pos l="27" s="1" c="20"/>
+</Attr>
+<Id value="top_discart_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:1">
+<Attr>
+<Pos l="27" s="16" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:2">
+<Attr>
+<Pos l="27" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_now) : (PLAYERS))">
+<Attr>
+<Pos l="29" s="1" c="14"/>
+</Attr>
+<Id value="player_now" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:1">
+<Attr>
+<Pos l="29" s="10" c="3"/>
+</Attr>
+</Id>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:2">
+<Attr>
+<Pos l="29" s="7" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_one_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="30" s="1" c="19"/>
+</Attr>
+<Id value="player_one_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:1">
+<Attr>
+<Pos l="30" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="30" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:2:1">
+<Attr>
+<Pos l="30" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((player_two_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="31" s="1" c="19"/>
+</Attr>
+<Id value="player_two_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:1">
+<Attr>
+<Pos l="31" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="31" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:7:2:1">
+<Attr>
+<Pos l="31" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis>
+<Attr>
+<Pos l="7" s="4" c="1"/>
+</Attr>
+<Set>
+<Id value="CARDS_TYPES" typref="2615387096" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:1">
+<Attr>
+<Pos l="8" s="11" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="CLUBS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:1">
+<Attr>
+<Pos l="8" s="5" c="19"/>
+</Attr>
+</Id>
+<Id value="DIAMONDS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:2">
+<Attr>
+<Pos l="8" s="8" c="26"/>
+</Attr>
+</Id>
+<Id value="HEARTS" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:3">
+<Attr>
+<Pos l="8" s="6" c="36"/>
+</Attr>
+</Id>
+<Id value="SPADES" typref="1686261355" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:1:2:4">
+<Attr>
+<Pos l="8" s="6" c="44"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="CARDS_VALUE" typref="2393683408" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:1">
+<Attr>
+<Pos l="9" s="11" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="ONE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:1">
+<Attr>
+<Pos l="9" s="3" c="19"/>
+</Attr>
+</Id>
+<Id value="TWO" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:2">
+<Attr>
+<Pos l="9" s="3" c="24"/>
+</Attr>
+</Id>
+<Id value="THREE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:3">
+<Attr>
+<Pos l="9" s="5" c="29"/>
+</Attr>
+</Id>
+<Id value="FOUR" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:4">
+<Attr>
+<Pos l="9" s="4" c="36"/>
+</Attr>
+</Id>
+<Id value="FIVE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:5">
+<Attr>
+<Pos l="9" s="4" c="42"/>
+</Attr>
+</Id>
+<Id value="SIX" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:6">
+<Attr>
+<Pos l="9" s="3" c="48"/>
+</Attr>
+</Id>
+<Id value="SAVEN" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:7">
+<Attr>
+<Pos l="9" s="5" c="53"/>
+</Attr>
+</Id>
+<Id value="EIGHT" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:8">
+<Attr>
+<Pos l="9" s="5" c="60"/>
+</Attr>
+</Id>
+<Id value="NINE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:9">
+<Attr>
+<Pos l="9" s="4" c="67"/>
+</Attr>
+</Id>
+<Id value="KING" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:10">
+<Attr>
+<Pos l="9" s="4" c="73"/>
+</Attr>
+</Id>
+<Id value="QUEEN" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:11">
+<Attr>
+<Pos l="9" s="5" c="79"/>
+</Attr>
+</Id>
+<Id value="JACK" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:12">
+<Attr>
+<Pos l="9" s="4" c="86"/>
+</Attr>
+</Id>
+<Id value="ACE" typref="4048836211" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:2:2:13">
+<Attr>
+<Pos l="9" s="3" c="92"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:1">
+<Attr>
+<Pos l="10" s="7" c="3"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="P_ONE" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:2:1">
+<Attr>
+<Pos l="10" s="5" c="15"/>
+</Attr>
+</Id>
+<Id value="P_TWO" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:1:3:2:2">
+<Attr>
+<Pos l="10" s="5" c="22"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos l="16" s="2" c="9"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:1">
+<Attr>
+<Pos l="16" s="5" c="3"/>
+</Attr>
+</Id>
+<Binary_Exp op="*" typref="1165212998">
+<Attr>
+<Pos l="16" s="1" c="23"/>
+</Attr>
+<Id value="CARDS_TYPES" typref="2615387096" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:2:1">
+<Attr>
+<Pos l="16" s="11" c="12"/>
+</Attr>
+</Id>
+<Id value="CARDS_VALUE" typref="2393683408" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:1:2:2">
+<Attr>
+<Pos l="16" s="11" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="17" s="1" c="9"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:2:1">
+<Attr>
+<Pos l="17" s="5" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="2846838589">
+<Attr>
+<Pos l="17" s="3" c="11"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:2:2:1">
+<Attr>
+<Pos l="17" s="5" c="15"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="18" s="5" c="8"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="18" s="5" c="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="18" s="1" c="15"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="18" s="4" c="3"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="18" s="5" c="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal value="52" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:3:2">
+<Attr>
+<Pos l="18" s="2" c="17"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="19" s="1" c="18"/>
+</Attr>
+<Id value="PLAYERS_NUMBER" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:4:1">
+<Attr>
+<Pos l="19" s="14" c="3"/>
+</Attr>
+</Id>
+<Integer_Literal value="2" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:5:1:4:2">
+<Attr>
+<Pos l="19" s="1" c="20"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="24" s="1" c="8"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:1">
+<Attr>
+<Pos l="24" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="24" s="3" c="10"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos l="24" s="5" c="14"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((top_deck) : (NAT))">
+<Attr>
+<Pos l="25" s="1" c="12"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="25" s="8" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="25" s="3" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((discart_deck) : (seq(CARDS)))">
+<Attr>
+<Pos l="26" s="1" c="16"/>
+</Attr>
+<Id value="discart_deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:1">
+<Attr>
+<Pos l="26" s="12" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="26" s="3" c="18"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:3:2:1">
+<Attr>
+<Pos l="26" s="5" c="22"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((top_discart_deck) : (NAT))">
+<Attr>
+<Pos l="27" s="1" c="20"/>
+</Attr>
+<Id value="top_discart_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:1">
+<Attr>
+<Pos l="27" s="16" c="3"/>
+</Attr>
+</Id>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:4:2">
+<Attr>
+<Pos l="27" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((player_now) : (PLAYERS))">
+<Attr>
+<Pos l="29" s="1" c="14"/>
+</Attr>
+<Id value="player_now" typref="3933013398" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:1">
+<Attr>
+<Pos l="29" s="10" c="3"/>
+</Attr>
+</Id>
+<Id value="PLAYERS" typref="3369446765" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:5:2">
+<Attr>
+<Pos l="29" s="7" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":" initialTag="((player_one_hand) : (seq(CARDS)))">
+<Attr>
+<Pos l="30" s="1" c="19"/>
+</Attr>
+<Id value="player_one_hand" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:1">
+<Attr>
+<Pos l="30" s="15" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="950679814">
+<Attr>
+<Pos l="30" s="3" c="21"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:6:1:6:2:1">
+<Attr>
+<Pos l="30" s="5" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Quantified_Pred type="!">
+<Variables>
+<Id value="deck" typref="2892902461" suffix="1" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Body>
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:2:1:1">
+<Attr>
+<Pos l="33" s="5" c="16"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:2:1:1">
+<Attr>
+<Pos l="33" s="5" c="16"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Id value="deck" typref="2892902461" suffix="1" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:1:1">
+<Attr>
+<Pos l="33" s="4" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="perm" typref="950679814">
+<Attr>
+<Pos l="33" s="4" c="11"/>
+</Attr>
+<Id value="CARDS" typref="1165212998" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:7:1:1:2:1:1">
+<Attr>
+<Pos l="33" s="5" c="16"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Binary_Pred>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_getDeckCard</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:2:1">
+<Attr>
+<Pos l="42" s="4" c="25"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq">
+<Unary_Exp op="ran">
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:2:1">
+<Attr>
+<Pos l="42" s="4" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos l="42" s="1" c="18"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="42" s="8" c="9"/>
+</Attr>
+</Id>
+<Unary_Exp op="size" typref="2701647786">
+<Attr>
+<Pos l="42" s="4" c="20"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:2:1">
+<Attr>
+<Pos l="42" s="4" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_getDeckCard</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos l="42" s="1" c="18"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="42" s="8" c="9"/>
+</Attr>
+</Id>
+<Unary_Exp op="size" typref="2701647786">
+<Attr>
+<Pos l="42" s="4" c="20"/>
+</Attr>
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:1:2:1">
+<Attr>
+<Pos l="42" s="4" c="25"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="43" s="1" c="20"/>
+</Attr>
+<Binary_Exp op="+" typref="2701647786">
+<Attr>
+<Pos l="43" s="1" c="16"/>
+</Attr>
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:1:1">
+<Attr>
+<Pos l="43" s="8" c="7"/>
+</Attr>
+</Id>
+<Integer_Literal value="1" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:1:2">
+<Attr>
+<Pos l="43" s="1" c="18"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id value="NAT" typref="3603043417" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:2:1:2:2">
+<Attr>
+<Pos l="43" s="3" c="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:1">
+<Attr>
+<Pos l="44" s="4" c="16"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq">
+<Unary_Exp op="ran">
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:1">
+<Attr>
+<Pos l="44" s="4" c="16"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="top_deck" typref="2701647786" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:2">
+<Attr>
+<Pos l="44" s="8" c="25"/>
+</Attr>
+</Id>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Unary_Exp op="size">
+<Id value="deck" typref="2892902461" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:8:1:3:1:1:2:1:1">
+<Attr>
+<Pos l="44" s="4" c="16"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2615387096">
+<Unary_Exp op="POW">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1686261355">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:2:1"/>
+</Type>
+<Type id="2393683408">
+<Unary_Exp op="POW">
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:3:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="4048836211">
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:4:1"/>
+</Type>
+<Type id="3369446765">
+<Unary_Exp op="POW">
+<Id value="PLAYERS" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:5:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="3933013398">
+<Id value="PLAYERS" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:6:1"/>
+</Type>
+<Type id="1165212998">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:7:1:1:1"/>
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:7:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:8:1"/>
+</Type>
+<Type id="2892902461">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:9:1:1:1"/>
+<Binary_Exp op="*">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:9:1:1:2:1"/>
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:9:1:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2846838589">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:10:1:1:1:1"/>
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:10:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="950679814">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:11:1:1:1:1"/>
+<Binary_Exp op="*">
+<Id value="CARDS_TYPES" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:11:1:1:1:2:1"/>
+<Id value="CARDS_VALUE" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:11:1:1:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="/home/nalbertgml/Documentos/bmethod-code/JogoVinteUm/bdp/Jogo.bxml:1:9:12:1:1"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>
