@@ -1,0 +1,10 @@
+﻿/* Game_cards_i
+ * Author: Nalbert Gabriel Melo Leal
+ * Creation date: 06/12/2020
+ */
+
+IMPLEMENTATION Game_cards_i
+REFINES Game_cards
+
+
+END

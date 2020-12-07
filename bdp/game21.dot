@@ -1,0 +1,13 @@
+digraph {
+Game_TEMP [ label=" Game_TEMP " shape= box ]
+Game_cards_i [ label=" Game_cards\nGame_cards_i " shape= box ]
+Game_ctx_r [ label=" Game_ctx\nGame_ctx_r " shape= box ]
+Game_r [ label=" game\nGame_r " shape= box ]
+Game_r2 [ label=" game\nGame_r2 " shape= box ]
+
+"Game_TEMP" -> "Game_cards_i" [style= dotted ]
+"Game_ctx_r" -> "Game_cards_i" [style= dotted ]
+"Game_r" -> "Game_ctx_r" [style= dotted ]
+"Game_r" -> "Game_cards_i" [style= dotted ]
+"Game_r2" -> "Game_cards_i" [style= dotted ]
+}

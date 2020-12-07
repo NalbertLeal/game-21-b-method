@@ -1,0 +1,26 @@
+THEORY ProofList
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((1..5)*{CARDS_TYPES}): FIN(NATURAL*{CARDS_TYPES}) & not(((1..5)*{CARDS_TYPES}) = {}) & ((1..14)*{CARDS_VALUE}): FIN(NATURAL*{CARDS_VALUE}) & not(((1..14)*{CARDS_VALUE}) = {}) & ((1..3)*{PLAYERS}): FIN(NATURAL*{PLAYERS}) & not(((1..3)*{PLAYERS}) = {}) & CARDS : POW( (((1..5)*{CARDS_TYPES}) * ((1..14)*{CARDS_VALUE}))) & ((CARDS) = ((((1..5)*{CARDS_TYPES}) * ((1..14)*{CARDS_VALUE})))) & ((CARDS) : (FIN(CARDS))) & PLAYABLE : POW( ((((1..5)*{CARDS_TYPES}) - ({(5|->CARDS_TYPES)})) * (((1..14)*{CARDS_VALUE}) - ({(14|->CARDS_VALUE)})))) & ((PLAYABLE) = (((((1..5)*{CARDS_TYPES}) - ({(5|->CARDS_TYPES)})) * (((1..14)*{CARDS_VALUE}) - ({(14|->CARDS_VALUE)}))))) & ((PLAYABLE) : (FIN(PLAYABLE))) & PLAYABLE : POW( CARDS) & ((card(PLAYABLE)) = (52)) & ((tuple_first) = (%(ct,vt).(((ct) : (((1..5)*{CARDS_TYPES}))) & ((vt) : (((1..14)*{CARDS_VALUE}))) | ct))) & ((tuple_second) = (%(ct,vt).(((ct) : (((1..5)*{CARDS_TYPES}))) & ((vt) : (((1..14)*{CARDS_VALUE}))) | vt))) & ((CARDS_POINTS) = (({(((13|->CARDS_VALUE)) |-> (1))}\/{(((1|->CARDS_VALUE)) |-> (1))}\/{(((2|->CARDS_VALUE)) |-> (2))}\/{(((3|->CARDS_VALUE)) |-> (3))}\/{(((4|->CARDS_VALUE)) |-> (4))}\/{(((5|->CARDS_VALUE)) |-> (5))}\/{(((6|->CARDS_VALUE)) |-> (6))}\/{(((7|->CARDS_VALUE)) |-> (7))}\/{(((8|->CARDS_VALUE)) |-> (8))}\/{(((9|->CARDS_VALUE)) |-> (9))}\/{(((10|->CARDS_VALUE)) |-> (10))}\/{(((11|->CARDS_VALUE)) |-> (10))}\/{(((12|->CARDS_VALUE)) |-> (10))})));
+((1..5)*{CARDS_TYPES}): FIN(NATURAL*{CARDS_TYPES}) & not(((1..5)*{CARDS_TYPES}) = {});
+((ct) : (((1..5)*{CARDS_TYPES})));
+((vt) : (((1..14)*{CARDS_VALUE})));
+((tuple_second) = (%(ct,vt).(((ct) : (((1..5)*{CARDS_TYPES}))) & ((vt) : (((1..14)*{CARDS_VALUE}))) | vt)));
+((tuple_first) = (%(ct,vt).(((ct) : (((1..5)*{CARDS_TYPES}))) & ((vt) : (((1..14)*{CARDS_VALUE}))) | ct)));
+((card(PLAYABLE)) = (52));
+PLAYABLE : POW( CARDS);
+((PLAYABLE) : (FIN(PLAYABLE)));
+((PLAYABLE) = (((((1..5)*{CARDS_TYPES}) - ({(5|->CARDS_TYPES)})) * (((1..14)*{CARDS_VALUE}) - ({(14|->CARDS_VALUE)})))));
+PLAYABLE : POW( ((((1..5)*{CARDS_TYPES}) - ({(5|->CARDS_TYPES)})) * (((1..14)*{CARDS_VALUE}) - ({(14|->CARDS_VALUE)}))));
+((CARDS) : (FIN(CARDS)));
+((CARDS) = ((((1..5)*{CARDS_TYPES}) * ((1..14)*{CARDS_VALUE}))));
+CARDS : POW( (((1..5)*{CARDS_TYPES}) * ((1..14)*{CARDS_VALUE})))
+END
+&
+THEORY EnumerateX IS
+CARDS_TYPES == {CLUBS,DIAMONDS,HEARTS,SPADES,NOTYPE};
+CARDS_VALUE == {ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,KING,QUEEN,JACK,ACE,NOVALUE};
+PLAYERS == {P_ONE,P_TWO,NOPLAYER}
+END

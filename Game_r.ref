@@ -1,0 +1,170 @@
+/* Game_r
+ * Author: Nalbert Gabriel Melo Leal
+ * Creation date: 06/12/2020
+ */
+
+REFINEMENT Game_r
+REFINES game
+SEES Game_cards, Game_ctx
+VARIABLES
+  deck_t_r,
+  deck_v_r,
+  
+  discart_t_r,
+  discart_v_r,
+  
+  player_one_hand_t_r,
+  player_one_hand_v_r,
+  player_one_points_r,
+  
+  player_two_hand_t_r,
+  player_two_hand_v_r,
+  player_two_points_r,
+  
+  top_deck_index,
+  top_deck_t_r,
+  top_deck_v_r,
+  
+  top_deck_points_r,
+  
+  game_over_r
+INVARIANT
+  deck_t_r : (0..(size(deck)-1)) --> CARDS_TYPES &
+  deck_v_r : (0..(size(deck)-1)) --> CARDS_VALUE &
+  
+  discart_t_r : (0..(size(discart)-1)) --> CARDS_TYPES &
+  discart_v_r : (0..(size(discart)-1)) --> CARDS_VALUE &
+  
+  player_one_hand_t_r : (0..(size(player_one_hand)-1)) --> CARDS_TYPES &
+  player_one_hand_v_r : (0..(size(player_one_hand)-1)) --> CARDS_VALUE &
+  
+  player_one_points_r : NAT &
+  player_one_points_r = player_one_points &
+  
+  player_two_hand_t_r : (0..(size(player_one_hand)-1)) --> CARDS_TYPES &
+  player_two_hand_v_r : (0..(size(player_one_hand)-1)) --> CARDS_VALUE &
+  
+  player_two_points_r  : NAT &
+  player_two_points_r = player_two_points &
+  
+  top_deck_index : NAT &
+  
+  top_deck_t_r : CARDS_TYPES &
+  top_deck_t_r = tuple_first(top_deck) &
+  top_deck_v_r : CARDS_VALUE &
+  top_deck_v_r = tuple_second(top_deck) &
+  
+  top_deck_points_r : NAT &
+  top_deck_points_r = top_deck_points &
+  
+  game_over_r : BOOL &
+  game_over_r = game_over
+INITIALISATION
+  deck_t_r := {} ||
+  deck_v_r := {} ||
+  
+  discart_t_r := {} ||
+  discart_v_r := {} ||
+  
+  player_one_hand_t_r := {} ||
+  player_one_hand_v_r := {} ||
+  player_one_points_r := 0 ||
+  
+  player_two_hand_t_r := {} ||
+  player_two_hand_v_r := {} ||
+  player_two_points_r := 0 ||
+  
+  top_deck_index := 0 ||
+  
+  top_deck_t_r := NOTYPE ||
+  top_deck_v_r := NOVALUE ||
+  
+  top_deck_points_r := 0 ||
+  
+  game_over_r := FALSE
+OPERATIONS
+  init_deck =
+    BEGIN
+      deck_t_r := DECK_TYPES;
+      deck_v_r := DECK_VALUES
+    END;
+    
+  init_hands = 
+    BEGIN
+      player_one_hand_t_r := { 0 |-> deck_t_r(0), 1 |-> deck_t_r(1), 2 |-> deck_t_r(2) };
+      player_one_hand_v_r := { 0 |-> deck_v_r(0), 1 |-> deck_v_r(1), 2 |-> deck_v_r(2) };
+      
+      player_two_hand_t_r := { 0 |-> deck_t_r(3), 1 |-> deck_t_r(4), 2 |-> deck_t_r(5) };
+      player_two_hand_v_r := { 0 |-> deck_v_r(3), 1 |-> deck_v_r(4), 2 |-> deck_v_r(5) }
+    END;
+    
+  init_hands_points =
+    BEGIN
+      player_one_points_r := CARDS_POINTS( player_one_hand_v_r(0) ) + 
+        CARDS_POINTS( player_one_hand_v_r(1) ) + 
+        CARDS_POINTS( player_one_hand_v_r(2) );
+      player_two_points_r := CARDS_POINTS( player_two_hand_v_r(0) ) + 
+        CARDS_POINTS( player_two_hand_v_r(1) ) + 
+        CARDS_POINTS (player_two_hand_v_r(2) )
+    END;
+    
+  update_top_deck =
+    BEGIN
+        top_deck_index := min( dom(deck_t_r) );
+          
+        top_deck_t_r := deck_t_r( min( dom(deck_t_r) ) );
+        top_deck_v_r := deck_v_r( min( dom(deck_v_r) ) );
+        
+        top_deck_points_r := CARDS_POINTS( top_deck_v_r )
+    END;
+    
+  reset_deck = 
+    BEGIN
+      deck_t_r := discart_t_r;
+      deck_v_r := discart_v_r;
+      discart_t_r := {};
+      discart_v_r := {}
+    END;
+    
+  player_one_play =
+    BEGIN
+        IF top_deck_points_r + player_one_points_r < 22 THEN
+				  player_one_points_r := top_deck_points_r + player_one_points_r;
+          player_one_hand_t_r := player_one_hand_t_r \/ {top_deck_index |-> top_deck_t_r};
+          player_one_hand_v_r := player_one_hand_v_r \/ {top_deck_index |-> top_deck_v_r};
+  				IF top_deck_points_r + player_one_points_r = 21 THEN
+  					game_over_r := TRUE
+  				ELSE
+  					game_over_r := FALSE
+  				END
+  			ELSE
+          discart_t_r := discart_t_r \/ {top_deck_index |-> top_deck_t_r};
+          discart_v_r := discart_v_r \/ {top_deck_index |-> top_deck_v_r}
+  			END;
+        top_deck_t_r := NOTYPE;
+        top_deck_v_r := NOVALUE;
+        top_deck_points_r := 0;
+        top_deck_index := 0
+    END;
+    
+  player_two_play =
+    BEGIN
+        IF top_deck_points_r + player_two_points_r < 22 THEN
+				  player_two_points_r := top_deck_points_r + player_two_points_r;
+          player_two_hand_t_r := player_two_hand_t_r \/ {top_deck_index |-> top_deck_t_r};
+          player_two_hand_v_r := player_two_hand_v_r \/ {top_deck_index |-> top_deck_v_r};
+  				IF top_deck_points_r + player_two_points_r = 21 THEN
+  					game_over_r := TRUE
+  				ELSE
+  					game_over_r := FALSE
+  				END
+  			ELSE
+          discart_t_r := discart_t_r \/ {top_deck_index |-> top_deck_t_r};
+          discart_v_r := discart_v_r \/ {top_deck_index |-> top_deck_v_r}
+  			END;
+        top_deck_t_r := NOTYPE;
+        top_deck_v_r := NOVALUE;
+        top_deck_points_r := 0;
+        top_deck_index := 0
+    END
+END

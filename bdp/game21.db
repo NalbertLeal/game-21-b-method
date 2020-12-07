@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\expand_src" old_decomp_dir="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\src">
+        <!-- Definition directory list -->
+        <!-- Component file list -->
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_TEMP" suffix="mch" user="nalbe">
+            <component name="Game_TEMP" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_cards" suffix="mch" user="nalbe">
+            <component name="Game_cards" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_cards_i" suffix="imp" user="nalbe">
+            <component name="Game_cards_i" type="implementation" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_ctx" suffix="mch" user="nalbe">
+            <component name="Game_ctx" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_ctx_r" suffix="ref" user="nalbe">
+            <component name="Game_ctx_r" type="refinement" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_r" suffix="ref" user="nalbe">
+            <component name="Game_r" type="refinement" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_r2" suffix="ref" user="nalbe">
+            <component name="Game_r2" type="refinement" />
+        </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="game" suffix="mch" user="nalbe">
+            <component name="game" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

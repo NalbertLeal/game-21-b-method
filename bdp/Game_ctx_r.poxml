@@ -1,0 +1,5334 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx">
+<Attr>
+<Pos s="4" l="7" c="1"/>
+</Attr>
+<Set>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:1" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="8" c="9"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:2:1" value="CLUBS">
+<Attr>
+<Pos s="5" l="8" c="25"/>
+</Attr>
+</Id>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:2:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="8" c="32"/>
+</Attr>
+</Id>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:2:3" value="HEARTS">
+<Attr>
+<Pos s="6" l="8" c="42"/>
+</Attr>
+</Id>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:2:4" value="SPADES">
+<Attr>
+<Pos s="6" l="8" c="50"/>
+</Attr>
+</Id>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:1:2:5" value="NOTYPE">
+<Attr>
+<Pos s="6" l="8" c="58"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:1" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="9" c="9"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:1" value="ONE">
+<Attr>
+<Pos s="3" l="9" c="25"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:2" value="TWO">
+<Attr>
+<Pos s="3" l="9" c="30"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:3" value="THREE">
+<Attr>
+<Pos s="5" l="9" c="35"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:4" value="FOUR">
+<Attr>
+<Pos s="4" l="9" c="42"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:5" value="FIVE">
+<Attr>
+<Pos s="4" l="9" c="48"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:6" value="SIX">
+<Attr>
+<Pos s="3" l="9" c="54"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:7" value="SEVEN">
+<Attr>
+<Pos s="5" l="9" c="59"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:8" value="EIGHT">
+<Attr>
+<Pos s="5" l="9" c="66"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:9" value="NINE">
+<Attr>
+<Pos s="4" l="9" c="73"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:10" value="KING">
+<Attr>
+<Pos s="4" l="9" c="79"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:11" value="QUEEN">
+<Attr>
+<Pos s="5" l="9" c="85"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:12" value="JACK">
+<Attr>
+<Pos s="4" l="9" c="92"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:13" value="ACE">
+<Attr>
+<Pos s="3" l="9" c="98"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:2:2:14" value="NOVALUE">
+<Attr>
+<Pos s="7" l="9" c="103"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id typref="3369446765" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:3:1" value="PLAYERS">
+<Attr>
+<Pos s="7" l="10" c="9"/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id typref="3933013398" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:3:2:1" value="P_ONE">
+<Attr>
+<Pos s="5" l="10" c="21"/>
+</Attr>
+</Id>
+<Id typref="3933013398" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:3:2:2" value="P_TWO">
+<Attr>
+<Pos s="5" l="10" c="28"/>
+</Attr>
+</Id>
+<Id typref="3933013398" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:1:3:2:3" value="NOPLAYER">
+<Attr>
+<Pos s="8" l="10" c="35"/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos s="10" l="18" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos s="2" l="19" c="15"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:1:1" value="CARDS">
+<Attr>
+<Pos s="5" l="19" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1165212998" op="*">
+<Attr>
+<Pos s="1" l="19" c="29"/>
+</Attr>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:1:2:1" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="19" c="18"/>
+</Attr>
+</Id>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:1:2:2" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="19" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="20" c="15"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:2:1" value="CARDS">
+<Attr>
+<Pos s="5" l="20" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1165212998" op="*">
+<Attr>
+<Pos s="1" l="20" c="28"/>
+</Attr>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:2:2:1" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="20" c="17"/>
+</Attr>
+</Id>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:2:2:2" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="20" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="21" c="15"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:3:1" value="CARDS">
+<Attr>
+<Pos s="5" l="21" c="9"/>
+</Attr>
+</Id>
+<Unary_Exp typref="2846838589" op="FIN">
+<Attr>
+<Pos s="3" l="21" c="17"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:3:2:1" value="CARDS">
+<Attr>
+<Pos s="5" l="21" c="21"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos s="2" l="23" c="18"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:4:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="23" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1165212998" op="*">
+<Attr>
+<Pos s="1" l="23" c="45"/>
+</Attr>
+<Binary_Exp typref="2615387096" op="-">
+<Attr>
+<Pos s="1" l="23" c="34"/>
+</Attr>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:4:2:1:1" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="23" c="22"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2615387096" op="{">
+<Attr>
+<Pos s="1" l="23" c="36"/>
+</Attr>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:4:2:1:2:1" value="NOTYPE">
+<Attr>
+<Pos s="6" l="23" c="37"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="2393683408" op="-">
+<Attr>
+<Pos s="1" l="23" c="59"/>
+</Attr>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:4:2:2:1" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="23" c="47"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2393683408" op="{">
+<Attr>
+<Pos s="1" l="23" c="61"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:4:2:2:2:1" value="NOVALUE">
+<Attr>
+<Pos s="7" l="23" c="62"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="24" c="18"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:5:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="24" c="9"/>
+</Attr>
+</Id>
+<Binary_Exp typref="1165212998" op="*">
+<Attr>
+<Pos s="1" l="24" c="44"/>
+</Attr>
+<Binary_Exp typref="2615387096" op="-">
+<Attr>
+<Pos s="1" l="24" c="33"/>
+</Attr>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:5:2:1:1" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="24" c="21"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2615387096" op="{">
+<Attr>
+<Pos s="1" l="24" c="35"/>
+</Attr>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:5:2:1:2:1" value="NOTYPE">
+<Attr>
+<Pos s="6" l="24" c="36"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="2393683408" op="-">
+<Attr>
+<Pos s="1" l="24" c="58"/>
+</Attr>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:5:2:2:1" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="24" c="46"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2393683408" op="{">
+<Attr>
+<Pos s="1" l="24" c="60"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:5:2:2:2:1" value="NOVALUE">
+<Attr>
+<Pos s="7" l="24" c="61"/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="25" c="18"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:6:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="25" c="9"/>
+</Attr>
+</Id>
+<Unary_Exp typref="2846838589" op="FIN">
+<Attr>
+<Pos s="3" l="25" c="20"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:6:2:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="25" c="24"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:">
+<Attr>
+<Pos s="2" l="26" c="18"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:7:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="26" c="9"/>
+</Attr>
+</Id>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:7:2" value="CARDS">
+<Attr>
+<Pos s="5" l="26" c="21"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="27" c="24"/>
+</Attr>
+<Unary_Exp typref="2701647786" op="card">
+<Attr>
+<Pos s="4" l="27" c="9"/>
+</Attr>
+<Id typref="1165212998" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:8:1:1" value="PLAYABLE">
+<Attr>
+<Pos s="8" l="27" c="14"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:8:2" value="52">
+<Attr>
+<Pos s="2" l="27" c="26"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="30" c="16"/>
+</Attr>
+<Id typref="2476946356" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:1" value="tuple_second">
+<Attr>
+<Pos s="12" l="30" c="3"/>
+</Attr>
+</Id>
+<Quantified_Exp typref="2476946356" type="%">
+<Attr>
+<Pos s="1" l="30" c="29"/>
+</Attr>
+<Variables>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:1:1" value="ct">
+<Attr>
+<Pos s="2" l="30" c="21"/>
+</Attr>
+</Id>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:1:2" value="vt">
+<Attr>
+<Pos s="2" l="30" c="25"/>
+</Attr>
+</Id>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="30" c="35"/>
+</Attr>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:2:1:1:1" value="ct">
+<Attr>
+<Pos s="2" l="30" c="32"/>
+</Attr>
+</Id>
+<Id typref="2615387096" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:2:1:1:2" value="CARDS_TYPES">
+<Attr>
+<Pos s="11" l="30" c="37"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="30" c="54"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:2:1:2:1" value="vt">
+<Attr>
+<Pos s="2" l="30" c="51"/>
+</Attr>
+</Id>
+<Id typref="2393683408" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:2:1:2:2" value="CARDS_VALUE">
+<Attr>
+<Pos s="11" l="30" c="56"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:9:2:3:1" value="vt">
+<Attr>
+<Pos s="2" l="30" c="70"/>
+</Attr>
+</Id>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="32" c="22"/>
+</Attr>
+<Id typref="1031716423" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:1" value="CARDS_POINTS">
+<Attr>
+<Pos s="12" l="32" c="9"/>
+</Attr>
+</Id>
+<Nary_Exp typref="1031716423" op="{">
+<Attr>
+<Pos s="1" l="32" c="24"/>
+</Attr>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="15"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:1:1" value="ACE">
+<Attr>
+<Pos s="3" l="33" c="11"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:1:2" value="1">
+<Attr>
+<Pos s="1" l="33" c="19"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="26"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:2:1" value="ONE">
+<Attr>
+<Pos s="3" l="33" c="22"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:2:2" value="1">
+<Attr>
+<Pos s="1" l="33" c="30"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="37"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:3:1" value="TWO">
+<Attr>
+<Pos s="3" l="33" c="33"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:3:2" value="2">
+<Attr>
+<Pos s="1" l="33" c="41"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="17"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:4:1" value="THREE">
+<Attr>
+<Pos s="5" l="34" c="11"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:4:2" value="3">
+<Attr>
+<Pos s="1" l="34" c="21"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="29"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:5:1" value="FOUR">
+<Attr>
+<Pos s="4" l="34" c="24"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:5:2" value="4">
+<Attr>
+<Pos s="1" l="34" c="33"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="41"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:6:1" value="FIVE">
+<Attr>
+<Pos s="4" l="34" c="36"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:6:2" value="5">
+<Attr>
+<Pos s="1" l="34" c="45"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="15"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:7:1" value="SIX">
+<Attr>
+<Pos s="3" l="35" c="11"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:7:2" value="6">
+<Attr>
+<Pos s="1" l="35" c="19"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="28"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:8:1" value="SEVEN">
+<Attr>
+<Pos s="5" l="35" c="22"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:8:2" value="7">
+<Attr>
+<Pos s="1" l="35" c="32"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="41"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:9:1" value="EIGHT">
+<Attr>
+<Pos s="5" l="35" c="35"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:9:2" value="8">
+<Attr>
+<Pos s="1" l="35" c="45"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="16"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:10:1" value="NINE">
+<Attr>
+<Pos s="4" l="36" c="11"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:10:2" value="9">
+<Attr>
+<Pos s="1" l="36" c="20"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="29"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:11:1" value="KING">
+<Attr>
+<Pos s="4" l="36" c="24"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:11:2" value="10">
+<Attr>
+<Pos s="2" l="36" c="33"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="43"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:12:1" value="QUEEN">
+<Attr>
+<Pos s="5" l="36" c="37"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:12:2" value="10">
+<Attr>
+<Pos s="2" l="36" c="47"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp typref="3545978172" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="56"/>
+</Attr>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:13:1" value="JACK">
+<Attr>
+<Pos s="4" l="36" c="51"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:4:1:10:2:13:2" value="10">
+<Attr>
+<Pos s="2" l="36" c="60"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="seext"/>
+<Define name="lprp">
+<Attr>
+<Pos s="10" l="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="10" c="14"/>
+</Attr>
+<Id typref="2253909711" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:1" value="DECK_TYPES">
+<Attr>
+<Pos s="10" l="10" c="3"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2253909711" op="{">
+<Attr>
+<Pos s="1" l="10" c="16"/>
+</Attr>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:1:1" value="0">
+<Attr>
+<Pos s="1" l="11" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:1:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:2:1" value="1">
+<Attr>
+<Pos s="1" l="11" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:2:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:3:1" value="2">
+<Attr>
+<Pos s="1" l="11" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:3:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:4:1" value="3">
+<Attr>
+<Pos s="1" l="11" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:4:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:5:1" value="4">
+<Attr>
+<Pos s="1" l="11" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:5:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:6:1" value="5">
+<Attr>
+<Pos s="1" l="11" c="72"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:6:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:7:1" value="6">
+<Attr>
+<Pos s="1" l="12" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:7:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:8:1" value="7">
+<Attr>
+<Pos s="1" l="12" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:8:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:9:1" value="8">
+<Attr>
+<Pos s="1" l="12" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:9:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:10:1" value="9">
+<Attr>
+<Pos s="1" l="12" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:10:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="62"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:11:1" value="10">
+<Attr>
+<Pos s="2" l="12" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:11:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="66"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="76"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:12:1" value="11">
+<Attr>
+<Pos s="2" l="12" c="73"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:12:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="80"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:13:1" value="12">
+<Attr>
+<Pos s="2" l="13" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:13:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:14:1" value="13">
+<Attr>
+<Pos s="2" l="14" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:14:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:15:1" value="14">
+<Attr>
+<Pos s="2" l="14" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:15:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:16:1" value="15">
+<Attr>
+<Pos s="2" l="14" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:16:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:17:1" value="16">
+<Attr>
+<Pos s="2" l="14" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:17:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:18:1" value="17">
+<Attr>
+<Pos s="2" l="14" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:18:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:19:1" value="18">
+<Attr>
+<Pos s="2" l="14" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:19:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:20:1" value="19">
+<Attr>
+<Pos s="2" l="15" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:20:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:21:1" value="20">
+<Attr>
+<Pos s="2" l="15" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:21:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:22:1" value="21">
+<Attr>
+<Pos s="2" l="15" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:22:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:23:1" value="22">
+<Attr>
+<Pos s="2" l="15" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:23:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:24:1" value="23">
+<Attr>
+<Pos s="2" l="15" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:24:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:25:1" value="24">
+<Attr>
+<Pos s="2" l="15" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:25:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:26:1" value="25">
+<Attr>
+<Pos s="2" l="16" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:26:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:27:1" value="26">
+<Attr>
+<Pos s="2" l="17" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:27:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:28:1" value="27">
+<Attr>
+<Pos s="2" l="17" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:28:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:29:1" value="28">
+<Attr>
+<Pos s="2" l="17" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:29:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:30:1" value="29">
+<Attr>
+<Pos s="2" l="17" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:30:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:31:1" value="30">
+<Attr>
+<Pos s="2" l="17" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:31:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:32:1" value="31">
+<Attr>
+<Pos s="2" l="17" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:32:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:33:1" value="32">
+<Attr>
+<Pos s="2" l="18" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:33:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:34:1" value="33">
+<Attr>
+<Pos s="2" l="18" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:34:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:35:1" value="34">
+<Attr>
+<Pos s="2" l="18" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:35:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:36:1" value="35">
+<Attr>
+<Pos s="2" l="18" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:36:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:37:1" value="36">
+<Attr>
+<Pos s="2" l="18" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:37:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:38:1" value="37">
+<Attr>
+<Pos s="2" l="18" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:38:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:39:1" value="38">
+<Attr>
+<Pos s="2" l="19" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:39:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:40:1" value="39">
+<Attr>
+<Pos s="2" l="20" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:40:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:41:1" value="40">
+<Attr>
+<Pos s="2" l="20" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:41:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:42:1" value="41">
+<Attr>
+<Pos s="2" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:42:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:43:1" value="42">
+<Attr>
+<Pos s="2" l="20" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:43:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:44:1" value="43">
+<Attr>
+<Pos s="2" l="20" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:44:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:45:1" value="44">
+<Attr>
+<Pos s="2" l="20" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:45:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:46:1" value="45">
+<Attr>
+<Pos s="2" l="21" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:46:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:47:1" value="46">
+<Attr>
+<Pos s="2" l="21" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:47:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:48:1" value="47">
+<Attr>
+<Pos s="2" l="21" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:48:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:49:1" value="48">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:49:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:50:1" value="49">
+<Attr>
+<Pos s="2" l="21" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:50:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:51:1" value="50">
+<Attr>
+<Pos s="2" l="21" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:51:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:52:1" value="51">
+<Attr>
+<Pos s="2" l="22" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:52:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="24" c="15"/>
+</Attr>
+<Id typref="1837407431" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:1" value="DECK_VALUES">
+<Attr>
+<Pos s="11" l="24" c="3"/>
+</Attr>
+</Id>
+<Nary_Exp typref="1837407431" op="{">
+<Attr>
+<Pos s="1" l="24" c="17"/>
+</Attr>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:1:1" value="0">
+<Attr>
+<Pos s="1" l="25" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:1:2" value="ONE">
+<Attr>
+<Pos s="3" l="25" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="20"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:2:1" value="1">
+<Attr>
+<Pos s="1" l="25" c="18"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:2:2" value="TWO">
+<Attr>
+<Pos s="3" l="25" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="31"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:3:1" value="2">
+<Attr>
+<Pos s="1" l="25" c="29"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:3:2" value="THREE">
+<Attr>
+<Pos s="5" l="25" c="35"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:4:1" value="3">
+<Attr>
+<Pos s="1" l="25" c="42"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:4:2" value="FOUR">
+<Attr>
+<Pos s="4" l="25" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="56"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:5:1" value="4">
+<Attr>
+<Pos s="1" l="25" c="54"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:5:2" value="FIVE">
+<Attr>
+<Pos s="4" l="25" c="60"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="25" c="68"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:6:1" value="5">
+<Attr>
+<Pos s="1" l="25" c="66"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:6:2" value="SIX">
+<Attr>
+<Pos s="3" l="25" c="72"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:7:1" value="6">
+<Attr>
+<Pos s="1" l="26" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:7:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="26" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:8:1" value="7">
+<Attr>
+<Pos s="1" l="26" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:8:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="26" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:9:1" value="8">
+<Attr>
+<Pos s="1" l="26" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:9:2" value="NINE">
+<Attr>
+<Pos s="4" l="26" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="47"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:10:1" value="9">
+<Attr>
+<Pos s="1" l="26" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:10:2" value="KING">
+<Attr>
+<Pos s="4" l="26" c="51"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="60"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:11:1" value="10">
+<Attr>
+<Pos s="2" l="26" c="57"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:11:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="26" c="64"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:12:1" value="11">
+<Attr>
+<Pos s="2" l="26" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:12:2" value="JACK">
+<Attr>
+<Pos s="4" l="26" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:13:1" value="12">
+<Attr>
+<Pos s="2" l="27" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:13:2" value="ACE">
+<Attr>
+<Pos s="3" l="27" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:14:1" value="13">
+<Attr>
+<Pos s="2" l="28" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:14:2" value="ONE">
+<Attr>
+<Pos s="3" l="28" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:15:1" value="14">
+<Attr>
+<Pos s="2" l="28" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:15:2" value="TWO">
+<Attr>
+<Pos s="3" l="28" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:16:1" value="15">
+<Attr>
+<Pos s="2" l="28" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:16:2" value="THREE">
+<Attr>
+<Pos s="5" l="28" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:17:1" value="16">
+<Attr>
+<Pos s="2" l="28" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:17:2" value="FOUR">
+<Attr>
+<Pos s="4" l="28" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:18:1" value="17">
+<Attr>
+<Pos s="2" l="28" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:18:2" value="FIVE">
+<Attr>
+<Pos s="4" l="28" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:19:1" value="18">
+<Attr>
+<Pos s="2" l="28" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:19:2" value="SIX">
+<Attr>
+<Pos s="3" l="28" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:20:1" value="19">
+<Attr>
+<Pos s="2" l="29" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:20:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="29" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:21:1" value="20">
+<Attr>
+<Pos s="2" l="29" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:21:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="29" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:22:1" value="21">
+<Attr>
+<Pos s="2" l="29" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:22:2" value="NINE">
+<Attr>
+<Pos s="4" l="29" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:23:1" value="22">
+<Attr>
+<Pos s="2" l="29" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:23:2" value="KING">
+<Attr>
+<Pos s="4" l="29" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:24:1" value="23">
+<Attr>
+<Pos s="2" l="29" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:24:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="29" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:25:1" value="24">
+<Attr>
+<Pos s="2" l="29" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:25:2" value="JACK">
+<Attr>
+<Pos s="4" l="29" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:26:1" value="25">
+<Attr>
+<Pos s="2" l="30" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:26:2" value="ACE">
+<Attr>
+<Pos s="3" l="30" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:27:1" value="26">
+<Attr>
+<Pos s="2" l="31" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:27:2" value="ONE">
+<Attr>
+<Pos s="3" l="31" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:28:1" value="27">
+<Attr>
+<Pos s="2" l="31" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:28:2" value="TWO">
+<Attr>
+<Pos s="3" l="31" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:29:1" value="28">
+<Attr>
+<Pos s="2" l="31" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:29:2" value="THREE">
+<Attr>
+<Pos s="5" l="31" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:30:1" value="29">
+<Attr>
+<Pos s="2" l="31" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:30:2" value="FOUR">
+<Attr>
+<Pos s="4" l="31" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:31:1" value="30">
+<Attr>
+<Pos s="2" l="31" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:31:2" value="FIVE">
+<Attr>
+<Pos s="4" l="31" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:32:1" value="31">
+<Attr>
+<Pos s="2" l="31" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:32:2" value="SIX">
+<Attr>
+<Pos s="3" l="31" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:33:1" value="32">
+<Attr>
+<Pos s="2" l="32" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:33:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="32" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:34:1" value="33">
+<Attr>
+<Pos s="2" l="32" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:34:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="32" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:35:1" value="34">
+<Attr>
+<Pos s="2" l="32" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:35:2" value="NINE">
+<Attr>
+<Pos s="4" l="32" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:36:1" value="35">
+<Attr>
+<Pos s="2" l="32" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:36:2" value="KING">
+<Attr>
+<Pos s="4" l="32" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:37:1" value="36">
+<Attr>
+<Pos s="2" l="32" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:37:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="32" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:38:1" value="37">
+<Attr>
+<Pos s="2" l="32" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:38:2" value="JACK">
+<Attr>
+<Pos s="4" l="32" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:39:1" value="38">
+<Attr>
+<Pos s="2" l="33" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:39:2" value="ACE">
+<Attr>
+<Pos s="3" l="33" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:40:1" value="39">
+<Attr>
+<Pos s="2" l="34" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:40:2" value="ONE">
+<Attr>
+<Pos s="3" l="34" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:41:1" value="40">
+<Attr>
+<Pos s="2" l="34" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:41:2" value="TWO">
+<Attr>
+<Pos s="3" l="34" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:42:1" value="41">
+<Attr>
+<Pos s="2" l="34" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:42:2" value="THREE">
+<Attr>
+<Pos s="5" l="34" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:43:1" value="42">
+<Attr>
+<Pos s="2" l="34" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:43:2" value="FOUR">
+<Attr>
+<Pos s="4" l="34" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:44:1" value="43">
+<Attr>
+<Pos s="2" l="34" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:44:2" value="FIVE">
+<Attr>
+<Pos s="4" l="34" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:45:1" value="44">
+<Attr>
+<Pos s="2" l="34" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:45:2" value="SIX">
+<Attr>
+<Pos s="3" l="34" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:46:1" value="45">
+<Attr>
+<Pos s="2" l="35" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:46:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="35" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:47:1" value="46">
+<Attr>
+<Pos s="2" l="35" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:47:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="35" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:48:1" value="47">
+<Attr>
+<Pos s="2" l="35" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:48:2" value="NINE">
+<Attr>
+<Pos s="4" l="35" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:49:1" value="48">
+<Attr>
+<Pos s="2" l="35" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:49:2" value="KING">
+<Attr>
+<Pos s="4" l="35" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:50:1" value="49">
+<Attr>
+<Pos s="2" l="35" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:50:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="35" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:51:1" value="50">
+<Attr>
+<Pos s="2" l="35" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:51:2" value="JACK">
+<Attr>
+<Pos s="4" l="35" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:52:1" value="51">
+<Attr>
+<Pos s="2" l="36" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:2:2:52:2" value="ACE">
+<Attr>
+<Pos s="3" l="36" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inprp"/>
+<Define name="inext"/>
+<Define name="mchcst"/>
+<Define name="aprp">
+<Attr>
+<Pos s="10" l="10" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="11" c="14"/>
+</Attr>
+<Id typref="2253909711" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:1" value="DECK_TYPES">
+<Attr>
+<Pos s="10" l="11" c="3"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2253909711" op="{">
+<Attr>
+<Pos s="1" l="11" c="16"/>
+</Attr>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:1:1" value="0">
+<Attr>
+<Pos s="1" l="12" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:1:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:2:1" value="1">
+<Attr>
+<Pos s="1" l="12" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:2:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:3:1" value="2">
+<Attr>
+<Pos s="1" l="12" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:3:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:4:1" value="3">
+<Attr>
+<Pos s="1" l="12" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:4:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:5:1" value="4">
+<Attr>
+<Pos s="1" l="12" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:5:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:6:1" value="5">
+<Attr>
+<Pos s="1" l="12" c="72"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:6:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:7:1" value="6">
+<Attr>
+<Pos s="1" l="13" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:7:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:8:1" value="7">
+<Attr>
+<Pos s="1" l="13" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:8:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:9:1" value="8">
+<Attr>
+<Pos s="1" l="13" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:9:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:10:1" value="9">
+<Attr>
+<Pos s="1" l="13" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:10:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="62"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:11:1" value="10">
+<Attr>
+<Pos s="2" l="13" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:11:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="66"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="76"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:12:1" value="11">
+<Attr>
+<Pos s="2" l="13" c="73"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:12:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="80"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:13:1" value="12">
+<Attr>
+<Pos s="2" l="14" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:13:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="14" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:14:1" value="13">
+<Attr>
+<Pos s="2" l="15" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:14:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:15:1" value="14">
+<Attr>
+<Pos s="2" l="15" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:15:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:16:1" value="15">
+<Attr>
+<Pos s="2" l="15" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:16:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:17:1" value="16">
+<Attr>
+<Pos s="2" l="15" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:17:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:18:1" value="17">
+<Attr>
+<Pos s="2" l="15" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:18:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:19:1" value="18">
+<Attr>
+<Pos s="2" l="15" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:19:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:20:1" value="19">
+<Attr>
+<Pos s="2" l="16" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:20:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:21:1" value="20">
+<Attr>
+<Pos s="2" l="16" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:21:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:22:1" value="21">
+<Attr>
+<Pos s="2" l="16" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:22:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:23:1" value="22">
+<Attr>
+<Pos s="2" l="16" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:23:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:24:1" value="23">
+<Attr>
+<Pos s="2" l="16" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:24:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:25:1" value="24">
+<Attr>
+<Pos s="2" l="16" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:25:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:26:1" value="25">
+<Attr>
+<Pos s="2" l="17" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:26:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="17" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:27:1" value="26">
+<Attr>
+<Pos s="2" l="18" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:27:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:28:1" value="27">
+<Attr>
+<Pos s="2" l="18" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:28:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:29:1" value="28">
+<Attr>
+<Pos s="2" l="18" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:29:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:30:1" value="29">
+<Attr>
+<Pos s="2" l="18" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:30:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:31:1" value="30">
+<Attr>
+<Pos s="2" l="18" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:31:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:32:1" value="31">
+<Attr>
+<Pos s="2" l="18" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:32:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:33:1" value="32">
+<Attr>
+<Pos s="2" l="19" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:33:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:34:1" value="33">
+<Attr>
+<Pos s="2" l="19" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:34:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:35:1" value="34">
+<Attr>
+<Pos s="2" l="19" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:35:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:36:1" value="35">
+<Attr>
+<Pos s="2" l="19" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:36:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:37:1" value="36">
+<Attr>
+<Pos s="2" l="19" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:37:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:38:1" value="37">
+<Attr>
+<Pos s="2" l="19" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:38:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:39:1" value="38">
+<Attr>
+<Pos s="2" l="20" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:39:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="20" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:40:1" value="39">
+<Attr>
+<Pos s="2" l="21" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:40:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:41:1" value="40">
+<Attr>
+<Pos s="2" l="21" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:41:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:42:1" value="41">
+<Attr>
+<Pos s="2" l="21" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:42:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:43:1" value="42">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:43:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:44:1" value="43">
+<Attr>
+<Pos s="2" l="21" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:44:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:45:1" value="44">
+<Attr>
+<Pos s="2" l="21" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:45:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:46:1" value="45">
+<Attr>
+<Pos s="2" l="22" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:46:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:47:1" value="46">
+<Attr>
+<Pos s="2" l="22" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:47:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:48:1" value="47">
+<Attr>
+<Pos s="2" l="22" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:48:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:49:1" value="48">
+<Attr>
+<Pos s="2" l="22" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:49:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:50:1" value="49">
+<Attr>
+<Pos s="2" l="22" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:50:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:51:1" value="50">
+<Attr>
+<Pos s="2" l="22" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:51:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="23" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:52:1" value="51">
+<Attr>
+<Pos s="2" l="23" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:1:2:52:2" value="SPADES">
+<Attr>
+<Pos s="6" l="23" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="25" c="15"/>
+</Attr>
+<Id typref="1837407431" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:1" value="DECK_VALUES">
+<Attr>
+<Pos s="11" l="25" c="3"/>
+</Attr>
+</Id>
+<Nary_Exp typref="1837407431" op="{">
+<Attr>
+<Pos s="1" l="25" c="17"/>
+</Attr>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:1:1" value="0">
+<Attr>
+<Pos s="1" l="26" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:1:2" value="ONE">
+<Attr>
+<Pos s="3" l="26" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="20"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:2:1" value="1">
+<Attr>
+<Pos s="1" l="26" c="18"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:2:2" value="TWO">
+<Attr>
+<Pos s="3" l="26" c="24"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="31"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:3:1" value="2">
+<Attr>
+<Pos s="1" l="26" c="29"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:3:2" value="THREE">
+<Attr>
+<Pos s="5" l="26" c="35"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:4:1" value="3">
+<Attr>
+<Pos s="1" l="26" c="42"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:4:2" value="FOUR">
+<Attr>
+<Pos s="4" l="26" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="56"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:5:1" value="4">
+<Attr>
+<Pos s="1" l="26" c="54"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:5:2" value="FIVE">
+<Attr>
+<Pos s="4" l="26" c="60"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="26" c="68"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:6:1" value="5">
+<Attr>
+<Pos s="1" l="26" c="66"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:6:2" value="SIX">
+<Attr>
+<Pos s="3" l="26" c="72"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:7:1" value="6">
+<Attr>
+<Pos s="1" l="27" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:7:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="27" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:8:1" value="7">
+<Attr>
+<Pos s="1" l="27" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:8:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="27" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:9:1" value="8">
+<Attr>
+<Pos s="1" l="27" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:9:2" value="NINE">
+<Attr>
+<Pos s="4" l="27" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="47"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:10:1" value="9">
+<Attr>
+<Pos s="1" l="27" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:10:2" value="KING">
+<Attr>
+<Pos s="4" l="27" c="51"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="60"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:11:1" value="10">
+<Attr>
+<Pos s="2" l="27" c="57"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:11:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="27" c="64"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="27" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:12:1" value="11">
+<Attr>
+<Pos s="2" l="27" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:12:2" value="JACK">
+<Attr>
+<Pos s="4" l="27" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="28" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:13:1" value="12">
+<Attr>
+<Pos s="2" l="28" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:13:2" value="ACE">
+<Attr>
+<Pos s="3" l="28" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:14:1" value="13">
+<Attr>
+<Pos s="2" l="29" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:14:2" value="ONE">
+<Attr>
+<Pos s="3" l="29" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:15:1" value="14">
+<Attr>
+<Pos s="2" l="29" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:15:2" value="TWO">
+<Attr>
+<Pos s="3" l="29" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:16:1" value="15">
+<Attr>
+<Pos s="2" l="29" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:16:2" value="THREE">
+<Attr>
+<Pos s="5" l="29" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:17:1" value="16">
+<Attr>
+<Pos s="2" l="29" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:17:2" value="FOUR">
+<Attr>
+<Pos s="4" l="29" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:18:1" value="17">
+<Attr>
+<Pos s="2" l="29" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:18:2" value="FIVE">
+<Attr>
+<Pos s="4" l="29" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="29" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:19:1" value="18">
+<Attr>
+<Pos s="2" l="29" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:19:2" value="SIX">
+<Attr>
+<Pos s="3" l="29" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:20:1" value="19">
+<Attr>
+<Pos s="2" l="30" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:20:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="30" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:21:1" value="20">
+<Attr>
+<Pos s="2" l="30" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:21:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="30" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:22:1" value="21">
+<Attr>
+<Pos s="2" l="30" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:22:2" value="NINE">
+<Attr>
+<Pos s="4" l="30" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:23:1" value="22">
+<Attr>
+<Pos s="2" l="30" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:23:2" value="KING">
+<Attr>
+<Pos s="4" l="30" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:24:1" value="23">
+<Attr>
+<Pos s="2" l="30" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:24:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="30" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="30" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:25:1" value="24">
+<Attr>
+<Pos s="2" l="30" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:25:2" value="JACK">
+<Attr>
+<Pos s="4" l="30" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="31" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:26:1" value="25">
+<Attr>
+<Pos s="2" l="31" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:26:2" value="ACE">
+<Attr>
+<Pos s="3" l="31" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:27:1" value="26">
+<Attr>
+<Pos s="2" l="32" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:27:2" value="ONE">
+<Attr>
+<Pos s="3" l="32" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:28:1" value="27">
+<Attr>
+<Pos s="2" l="32" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:28:2" value="TWO">
+<Attr>
+<Pos s="3" l="32" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:29:1" value="28">
+<Attr>
+<Pos s="2" l="32" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:29:2" value="THREE">
+<Attr>
+<Pos s="5" l="32" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:30:1" value="29">
+<Attr>
+<Pos s="2" l="32" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:30:2" value="FOUR">
+<Attr>
+<Pos s="4" l="32" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:31:1" value="30">
+<Attr>
+<Pos s="2" l="32" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:31:2" value="FIVE">
+<Attr>
+<Pos s="4" l="32" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="32" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:32:1" value="31">
+<Attr>
+<Pos s="2" l="32" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:32:2" value="SIX">
+<Attr>
+<Pos s="3" l="32" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:33:1" value="32">
+<Attr>
+<Pos s="2" l="33" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:33:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="33" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:34:1" value="33">
+<Attr>
+<Pos s="2" l="33" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:34:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="33" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:35:1" value="34">
+<Attr>
+<Pos s="2" l="33" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:35:2" value="NINE">
+<Attr>
+<Pos s="4" l="33" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:36:1" value="35">
+<Attr>
+<Pos s="2" l="33" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:36:2" value="KING">
+<Attr>
+<Pos s="4" l="33" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:37:1" value="36">
+<Attr>
+<Pos s="2" l="33" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:37:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="33" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="33" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:38:1" value="37">
+<Attr>
+<Pos s="2" l="33" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:38:2" value="JACK">
+<Attr>
+<Pos s="4" l="33" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="34" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:39:1" value="38">
+<Attr>
+<Pos s="2" l="34" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:39:2" value="ACE">
+<Attr>
+<Pos s="3" l="34" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:40:1" value="39">
+<Attr>
+<Pos s="2" l="35" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:40:2" value="ONE">
+<Attr>
+<Pos s="3" l="35" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:41:1" value="40">
+<Attr>
+<Pos s="2" l="35" c="19"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:41:2" value="TWO">
+<Attr>
+<Pos s="3" l="35" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="34"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:42:1" value="41">
+<Attr>
+<Pos s="2" l="35" c="31"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:42:2" value="THREE">
+<Attr>
+<Pos s="5" l="35" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:43:1" value="42">
+<Attr>
+<Pos s="2" l="35" c="45"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:43:2" value="FOUR">
+<Attr>
+<Pos s="4" l="35" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:44:1" value="43">
+<Attr>
+<Pos s="2" l="35" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:44:2" value="FIVE">
+<Attr>
+<Pos s="4" l="35" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="35" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:45:1" value="44">
+<Attr>
+<Pos s="2" l="35" c="71"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:45:2" value="SIX">
+<Attr>
+<Pos s="3" l="35" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:46:1" value="45">
+<Attr>
+<Pos s="2" l="36" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:46:2" value="SEVEN">
+<Attr>
+<Pos s="5" l="36" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="24"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:47:1" value="46">
+<Attr>
+<Pos s="2" l="36" c="21"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:47:2" value="EIGHT">
+<Attr>
+<Pos s="5" l="36" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="38"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:48:1" value="47">
+<Attr>
+<Pos s="2" l="36" c="35"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:48:2" value="NINE">
+<Attr>
+<Pos s="4" l="36" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="51"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:49:1" value="48">
+<Attr>
+<Pos s="2" l="36" c="48"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:49:2" value="KING">
+<Attr>
+<Pos s="4" l="36" c="55"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="64"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:50:1" value="49">
+<Attr>
+<Pos s="2" l="36" c="61"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:50:2" value="QUEEN">
+<Attr>
+<Pos s="5" l="36" c="68"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="36" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:51:1" value="50">
+<Attr>
+<Pos s="2" l="36" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:51:2" value="JACK">
+<Attr>
+<Pos s="4" l="36" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="1279940284" op="|-&gt;">
+<Attr>
+<Pos s="3" l="37" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:52:1" value="51">
+<Attr>
+<Pos s="2" l="37" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="4048836211" tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:3:1:2:2:52:2" value="ACE">
+<Attr>
+<Pos s="3" l="37" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="abs"/>
+<Define name="inv"/>
+<Define name="ass"/>
+<Proof_Obligation>
+<Comment>Initialisation dans un raffinement</Comment>
+<Tag>Initialisation</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Refinement is correct">
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Skip tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:4:1"/>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Not>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Skip tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:4:1"/>
+</Nary_Sub>
+<Not>
+<Nary_Pred op="&amp;"/>
+</Not>
+</Sub_Calculus>
+</Not>
+</Binary_Pred>
+</Sub_Calculus>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="10" c="14"/>
+</Attr>
+<Id typref="2253909711" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:1" value="DECK_TYPES">
+<Attr>
+<Pos s="10" l="10" c="3"/>
+</Attr>
+</Id>
+<Nary_Exp typref="2253909711" op="{">
+<Attr>
+<Pos s="1" l="10" c="16"/>
+</Attr>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:1:1" value="0">
+<Attr>
+<Pos s="1" l="11" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:1:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:2:1" value="1">
+<Attr>
+<Pos s="1" l="11" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:2:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:3:1" value="2">
+<Attr>
+<Pos s="1" l="11" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:3:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:4:1" value="3">
+<Attr>
+<Pos s="1" l="11" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:4:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:5:1" value="4">
+<Attr>
+<Pos s="1" l="11" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:5:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="11" c="74"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:6:1" value="5">
+<Attr>
+<Pos s="1" l="11" c="72"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:6:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="11" c="78"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="9"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:7:1" value="6">
+<Attr>
+<Pos s="1" l="12" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:7:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="22"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:8:1" value="7">
+<Attr>
+<Pos s="1" l="12" c="20"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:8:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="35"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:9:1" value="8">
+<Attr>
+<Pos s="1" l="12" c="33"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:9:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="39"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="48"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:10:1" value="9">
+<Attr>
+<Pos s="1" l="12" c="46"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:10:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="52"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="62"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:11:1" value="10">
+<Attr>
+<Pos s="2" l="12" c="59"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:11:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="66"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="12" c="76"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:12:1" value="11">
+<Attr>
+<Pos s="2" l="12" c="73"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:12:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="12" c="80"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="13" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:13:1" value="12">
+<Attr>
+<Pos s="2" l="13" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:13:2" value="CLUBS">
+<Attr>
+<Pos s="5" l="13" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:14:1" value="13">
+<Attr>
+<Pos s="2" l="14" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:14:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:15:1" value="14">
+<Attr>
+<Pos s="2" l="14" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:15:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:16:1" value="15">
+<Attr>
+<Pos s="2" l="14" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:16:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:17:1" value="16">
+<Attr>
+<Pos s="2" l="14" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:17:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:18:1" value="17">
+<Attr>
+<Pos s="2" l="14" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:18:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="14" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:19:1" value="18">
+<Attr>
+<Pos s="2" l="14" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:19:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="14" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:20:1" value="19">
+<Attr>
+<Pos s="2" l="15" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:20:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="27"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:21:1" value="20">
+<Attr>
+<Pos s="2" l="15" c="24"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:21:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="31"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="44"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:22:1" value="21">
+<Attr>
+<Pos s="2" l="15" c="41"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:22:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="48"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="61"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:23:1" value="22">
+<Attr>
+<Pos s="2" l="15" c="58"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:23:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="65"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="78"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:24:1" value="23">
+<Attr>
+<Pos s="2" l="15" c="75"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:24:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="82"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="15" c="95"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:25:1" value="24">
+<Attr>
+<Pos s="2" l="15" c="92"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:25:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="15" c="99"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="16" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:26:1" value="25">
+<Attr>
+<Pos s="2" l="16" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:26:2" value="DIAMONDS">
+<Attr>
+<Pos s="8" l="16" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:27:1" value="26">
+<Attr>
+<Pos s="2" l="17" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:27:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:28:1" value="27">
+<Attr>
+<Pos s="2" l="17" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:28:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:29:1" value="28">
+<Attr>
+<Pos s="2" l="17" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:29:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:30:1" value="29">
+<Attr>
+<Pos s="2" l="17" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:30:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:31:1" value="30">
+<Attr>
+<Pos s="2" l="17" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:31:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="17" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:32:1" value="31">
+<Attr>
+<Pos s="2" l="17" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:32:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="17" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:33:1" value="32">
+<Attr>
+<Pos s="2" l="18" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:33:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:34:1" value="33">
+<Attr>
+<Pos s="2" l="18" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:34:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:35:1" value="34">
+<Attr>
+<Pos s="2" l="18" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:35:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:36:1" value="35">
+<Attr>
+<Pos s="2" l="18" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:36:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:37:1" value="36">
+<Attr>
+<Pos s="2" l="18" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:37:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="18" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:38:1" value="37">
+<Attr>
+<Pos s="2" l="18" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:38:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="18" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="19" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:39:1" value="38">
+<Attr>
+<Pos s="2" l="19" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:39:2" value="HEARTS">
+<Attr>
+<Pos s="6" l="19" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:40:1" value="39">
+<Attr>
+<Pos s="2" l="20" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:40:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:41:1" value="40">
+<Attr>
+<Pos s="2" l="20" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:41:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:42:1" value="41">
+<Attr>
+<Pos s="2" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:42:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:43:1" value="42">
+<Attr>
+<Pos s="2" l="20" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:43:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:44:1" value="43">
+<Attr>
+<Pos s="2" l="20" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:44:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="20" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:45:1" value="44">
+<Attr>
+<Pos s="2" l="20" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:45:2" value="SPADES">
+<Attr>
+<Pos s="6" l="20" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:46:1" value="45">
+<Attr>
+<Pos s="2" l="21" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:46:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="25"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:47:1" value="46">
+<Attr>
+<Pos s="2" l="21" c="22"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:47:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="29"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="40"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:48:1" value="47">
+<Attr>
+<Pos s="2" l="21" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:48:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="55"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:49:1" value="48">
+<Attr>
+<Pos s="2" l="21" c="52"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:49:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="70"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:50:1" value="49">
+<Attr>
+<Pos s="2" l="21" c="67"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:50:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="74"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="21" c="85"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:51:1" value="50">
+<Attr>
+<Pos s="2" l="21" c="82"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:51:2" value="SPADES">
+<Attr>
+<Pos s="6" l="21" c="89"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2060905140" op="|-&gt;">
+<Attr>
+<Pos s="3" l="22" c="10"/>
+</Attr>
+<Integer_Literal typref="2701647786" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:52:1" value="51">
+<Attr>
+<Pos s="2" l="22" c="7"/>
+</Attr>
+</Integer_Literal>
+<Id typref="1686261355" tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:3:1:1:2:52:2" value="SPADES">
+<Attr>
+<Pos s="6" l="22" c="14"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2253909711">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:1:1:1:1" value="INTEGER"/>
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:1:1:1:2" value="CARDS_TYPES"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2060905140">
+<Binary_Exp op="*">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:2:1:1" value="INTEGER"/>
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:2:1:2" value="CARDS_TYPES"/>
+</Binary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:3:1" value="INTEGER"/>
+</Type>
+<Type id="1686261355">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:4:1" value="CARDS_TYPES"/>
+</Type>
+<Type id="1837407431">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:5:1:1:1" value="INTEGER"/>
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:5:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1279940284">
+<Binary_Exp op="*">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:6:1:1" value="INTEGER"/>
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:6:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Type>
+<Type id="4048836211">
+<Id tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_r.bxml:1:5:7:1" value="CARDS_VALUE"/>
+</Type>
+<Type id="2253909711">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:1:1:1:1" value="INTEGER"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:1:1:1:2" value="CARDS_TYPES"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1837407431">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:2:1:1:1" value="INTEGER"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:2:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2060905140">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:3:1:1" value="INTEGER"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:3:1:2" value="CARDS_TYPES"/>
+</Binary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:4:1" value="INTEGER"/>
+</Type>
+<Type id="1686261355">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:5:1" value="CARDS_TYPES"/>
+</Type>
+<Type id="1279940284">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:6:1:1" value="INTEGER"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:6:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Type>
+<Type id="4048836211">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:5:7:1" value="CARDS_VALUE"/>
+</Type>
+<Type id="2615387096">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:1:1:1" value="CARDS_TYPES"/>
+</Unary_Exp>
+</Type>
+<Type id="1686261355">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:2:1" value="CARDS_TYPES"/>
+</Type>
+<Type id="2393683408">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:3:1:1" value="CARDS_VALUE"/>
+</Unary_Exp>
+</Type>
+<Type id="4048836211">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:4:1" value="CARDS_VALUE"/>
+</Type>
+<Type id="3369446765">
+<Unary_Exp op="POW">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:5:1:1" value="PLAYERS"/>
+</Unary_Exp>
+</Type>
+<Type id="3933013398">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:6:1" value="PLAYERS"/>
+</Type>
+<Type id="1165212998">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:7:1:1:1" value="CARDS_TYPES"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:7:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2476946356">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:8:1:1:1:1" value="CARDS_TYPES"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:8:1:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:8:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1031716423">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:9:1:1:1" value="CARDS_VALUE"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:9:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2846838589">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:10:1:1:1:1" value="CARDS_TYPES"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:10:1:1:1:2" value="CARDS_VALUE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:11:1" value="INTEGER"/>
+</Type>
+<Type id="3545978172">
+<Binary_Exp op="*">
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:12:1:1" value="CARDS_VALUE"/>
+<Id tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_cards.bxml:1:6:12:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>
