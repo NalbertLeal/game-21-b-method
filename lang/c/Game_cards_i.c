@@ -1,0 +1,21 @@
+/* WARNING if type checker is not performed, translation could contain errors ! */
+
+#include "Game_cards.h"
+
+/* Clause CONCRETE_CONSTANTS */
+/* Basic constants */
+
+/* Array and record constants */
+
+const Game_cards__CARDS_TYPES Game_cards__CARDS_TYPES_ARRAY[52] = {Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__CLUBS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__DIAMONDS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__HEARTS,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES,Game_cards__SPADES};
+
+const Game_cards__CARDS_VALUE Game_cards__CARDS_VALUES_ARRAY[52] = {Game_cards__ONE,Game_cards__TWO,Game_cards__THREE,Game_cards__FOUR,Game_cards__FIVE,Game_cards__SIX,Game_cards__SEVEN,Game_cards__EIGHT,Game_cards__NINE,Game_cards__KING,Game_cards__QUEEN,Game_cards__JACK,Game_cards__ACE,Game_cards__ONE,Game_cards__TWO,Game_cards__THREE,Game_cards__FOUR,Game_cards__FIVE,Game_cards__SIX,Game_cards__SEVEN,Game_cards__EIGHT,Game_cards__NINE,Game_cards__KING,Game_cards__QUEEN,Game_cards__JACK,Game_cards__ACE,Game_cards__ONE,Game_cards__TWO,Game_cards__THREE,Game_cards__FOUR,Game_cards__FIVE,Game_cards__SIX,Game_cards__SEVEN,Game_cards__EIGHT,Game_cards__NINE,Game_cards__KING,Game_cards__QUEEN,Game_cards__JACK,Game_cards__ACE,Game_cards__ONE,Game_cards__TWO,Game_cards__THREE,Game_cards__FOUR,Game_cards__FIVE,Game_cards__SIX,Game_cards__SEVEN,Game_cards__EIGHT,Game_cards__NINE,Game_cards__KING,Game_cards__QUEEN,Game_cards__JACK,Game_cards__ACE};
+/* Clause CONCRETE_VARIABLES */
+
+/* Clause INITIALISATION */
+void Game_cards__INITIALISATION(void)
+{
+    
+    ;
+}
+

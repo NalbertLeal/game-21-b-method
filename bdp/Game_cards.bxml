@@ -165,218 +165,98 @@
 <Pos l='15' c='9' s='12'/>
 </Attr>
 </Id>
+<Id value='CARDS_POINTS' typref='1031716423'>
+<Attr>
+<Pos l='16' c='9' s='12'/>
+</Attr>
+</Id>
 </Abstract_Constants>
 <Concrete_Constants>
 <Attr>
-<Pos l='16' c='1' s='18'/>
+<Pos l='17' c='1' s='18'/>
 </Attr>
-<Id value='CARDS_POINTS' typref='1031716423'>
+<Id value='CARDS_TYPES_ARRAY' typref='2253909711'>
 <Attr>
-<Pos l='17' c='9' s='12'/>
+<Pos l='19' c='9' s='17'/>
+</Attr>
+</Id>
+<Id value='CARDS_VALUES_ARRAY' typref='1837407431'>
+<Attr>
+<Pos l='20' c='9' s='18'/>
 </Attr>
 </Id>
 </Concrete_Constants>
 <Properties>
 <Attr>
-<Pos l='18' c='1' s='10'/>
+<Pos l='21' c='1' s='10'/>
 </Attr>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op='&lt;:'>
 <Attr>
-<Pos l='19' c='15' s='2'/>
+<Pos l='22' c='15' s='2'/>
 </Attr>
 <Id value='CARDS' typref='1165212998'>
 <Attr>
-<Pos l='19' c='9' s='5'/>
+<Pos l='22' c='9' s='5'/>
 </Attr>
 </Id>
 <Binary_Exp op='*' typref='1165212998'>
 <Attr>
-<Pos l='19' c='29' s='1'/>
+<Pos l='22' c='29' s='1'/>
 </Attr>
 <Id value='CARDS_TYPES' typref='2615387096'>
 <Attr>
-<Pos l='19' c='18' s='11'/>
+<Pos l='22' c='18' s='11'/>
 </Attr>
 </Id>
 <Id value='CARDS_VALUE' typref='2393683408'>
 <Attr>
-<Pos l='19' c='30' s='11'/>
+<Pos l='22' c='30' s='11'/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='20' c='15' s='1'/>
+<Pos l='23' c='15' s='1'/>
 </Attr>
 <Id value='CARDS' typref='1165212998'>
 <Attr>
-<Pos l='20' c='9' s='5'/>
+<Pos l='23' c='9' s='5'/>
 </Attr>
 </Id>
 <Binary_Exp op='*' typref='1165212998'>
 <Attr>
-<Pos l='20' c='28' s='1'/>
+<Pos l='23' c='28' s='1'/>
 </Attr>
 <Id value='CARDS_TYPES' typref='2615387096'>
 <Attr>
-<Pos l='20' c='17' s='11'/>
+<Pos l='23' c='17' s='11'/>
 </Attr>
 </Id>
 <Id value='CARDS_VALUE' typref='2393683408'>
 <Attr>
-<Pos l='20' c='29' s='11'/>
+<Pos l='23' c='29' s='11'/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='21' c='15' s='1'/>
+<Pos l='24' c='15' s='1'/>
 </Attr>
 <Id value='CARDS' typref='1165212998'>
 <Attr>
-<Pos l='21' c='9' s='5'/>
+<Pos l='24' c='9' s='5'/>
 </Attr>
 </Id>
 <Unary_Exp op='FIN' typref='2846838589'>
 <Attr>
-<Pos l='21' c='17' s='3'/>
+<Pos l='24' c='17' s='3'/>
 </Attr>
 <Id value='CARDS' typref='1165212998'>
 <Attr>
-<Pos l='21' c='21' s='5'/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op='&lt;:'>
-<Attr>
-<Pos l='23' c='18' s='2'/>
-</Attr>
-<Id value='PLAYABLE' typref='1165212998'>
-<Attr>
-<Pos l='23' c='9' s='8'/>
-</Attr>
-</Id>
-<Binary_Exp op='*' typref='1165212998'>
-<Attr>
-<Pos l='23' c='45' s='1'/>
-</Attr>
-<Binary_Exp op='-' typref='2615387096'>
-<Attr>
-<Pos l='23' c='34' s='1'/>
-</Attr>
-<Id value='CARDS_TYPES' typref='2615387096'>
-<Attr>
-<Pos l='23' c='22' s='11'/>
-</Attr>
-</Id>
-<Nary_Exp op='{' typref='2615387096'>
-<Attr>
-<Pos l='23' c='36' s='1'/>
-</Attr>
-<Id value='NOTYPE' typref='1686261355'>
-<Attr>
-<Pos l='23' c='37' s='6'/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-<Binary_Exp op='-' typref='2393683408'>
-<Attr>
-<Pos l='23' c='59' s='1'/>
-</Attr>
-<Id value='CARDS_VALUE' typref='2393683408'>
-<Attr>
-<Pos l='23' c='47' s='11'/>
-</Attr>
-</Id>
-<Nary_Exp op='{' typref='2393683408'>
-<Attr>
-<Pos l='23' c='61' s='1'/>
-</Attr>
-<Id value='NOVALUE' typref='4048836211'>
-<Attr>
-<Pos l='23' c='62' s='7'/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op='='>
-<Attr>
-<Pos l='24' c='18' s='1'/>
-</Attr>
-<Id value='PLAYABLE' typref='1165212998'>
-<Attr>
-<Pos l='24' c='9' s='8'/>
-</Attr>
-</Id>
-<Binary_Exp op='*' typref='1165212998'>
-<Attr>
-<Pos l='24' c='44' s='1'/>
-</Attr>
-<Binary_Exp op='-' typref='2615387096'>
-<Attr>
-<Pos l='24' c='33' s='1'/>
-</Attr>
-<Id value='CARDS_TYPES' typref='2615387096'>
-<Attr>
-<Pos l='24' c='21' s='11'/>
-</Attr>
-</Id>
-<Nary_Exp op='{' typref='2615387096'>
-<Attr>
-<Pos l='24' c='35' s='1'/>
-</Attr>
-<Id value='NOTYPE' typref='1686261355'>
-<Attr>
-<Pos l='24' c='36' s='6'/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-<Binary_Exp op='-' typref='2393683408'>
-<Attr>
-<Pos l='24' c='58' s='1'/>
-</Attr>
-<Id value='CARDS_VALUE' typref='2393683408'>
-<Attr>
-<Pos l='24' c='46' s='11'/>
-</Attr>
-</Id>
-<Nary_Exp op='{' typref='2393683408'>
-<Attr>
-<Pos l='24' c='60' s='1'/>
-</Attr>
-<Id value='NOVALUE' typref='4048836211'>
-<Attr>
-<Pos l='24' c='61' s='7'/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='25' c='18' s='1'/>
-</Attr>
-<Id value='PLAYABLE' typref='1165212998'>
-<Attr>
-<Pos l='25' c='9' s='8'/>
-</Attr>
-</Id>
-<Unary_Exp op='FIN' typref='2846838589'>
-<Attr>
-<Pos l='25' c='20' s='3'/>
-</Attr>
-<Id value='PLAYABLE' typref='1165212998'>
-<Attr>
-<Pos l='25' c='24' s='8'/>
+<Pos l='24' c='21' s='5'/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -390,54 +270,184 @@
 <Pos l='26' c='9' s='8'/>
 </Attr>
 </Id>
+<Binary_Exp op='*' typref='1165212998'>
+<Attr>
+<Pos l='26' c='45' s='1'/>
+</Attr>
+<Binary_Exp op='-' typref='2615387096'>
+<Attr>
+<Pos l='26' c='34' s='1'/>
+</Attr>
+<Id value='CARDS_TYPES' typref='2615387096'>
+<Attr>
+<Pos l='26' c='22' s='11'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2615387096'>
+<Attr>
+<Pos l='26' c='36' s='1'/>
+</Attr>
+<Id value='NOTYPE' typref='1686261355'>
+<Attr>
+<Pos l='26' c='37' s='6'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op='-' typref='2393683408'>
+<Attr>
+<Pos l='26' c='59' s='1'/>
+</Attr>
+<Id value='CARDS_VALUE' typref='2393683408'>
+<Attr>
+<Pos l='26' c='47' s='11'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2393683408'>
+<Attr>
+<Pos l='26' c='61' s='1'/>
+</Attr>
+<Id value='NOVALUE' typref='4048836211'>
+<Attr>
+<Pos l='26' c='62' s='7'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='27' c='18' s='1'/>
+</Attr>
+<Id value='PLAYABLE' typref='1165212998'>
+<Attr>
+<Pos l='27' c='9' s='8'/>
+</Attr>
+</Id>
+<Binary_Exp op='*' typref='1165212998'>
+<Attr>
+<Pos l='27' c='44' s='1'/>
+</Attr>
+<Binary_Exp op='-' typref='2615387096'>
+<Attr>
+<Pos l='27' c='33' s='1'/>
+</Attr>
+<Id value='CARDS_TYPES' typref='2615387096'>
+<Attr>
+<Pos l='27' c='21' s='11'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2615387096'>
+<Attr>
+<Pos l='27' c='35' s='1'/>
+</Attr>
+<Id value='NOTYPE' typref='1686261355'>
+<Attr>
+<Pos l='27' c='36' s='6'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+<Binary_Exp op='-' typref='2393683408'>
+<Attr>
+<Pos l='27' c='58' s='1'/>
+</Attr>
+<Id value='CARDS_VALUE' typref='2393683408'>
+<Attr>
+<Pos l='27' c='46' s='11'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2393683408'>
+<Attr>
+<Pos l='27' c='60' s='1'/>
+</Attr>
+<Id value='NOVALUE' typref='4048836211'>
+<Attr>
+<Pos l='27' c='61' s='7'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='28' c='18' s='1'/>
+</Attr>
+<Id value='PLAYABLE' typref='1165212998'>
+<Attr>
+<Pos l='28' c='9' s='8'/>
+</Attr>
+</Id>
+<Unary_Exp op='FIN' typref='2846838589'>
+<Attr>
+<Pos l='28' c='20' s='3'/>
+</Attr>
+<Id value='PLAYABLE' typref='1165212998'>
+<Attr>
+<Pos l='28' c='24' s='8'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='29' c='18' s='2'/>
+</Attr>
+<Id value='PLAYABLE' typref='1165212998'>
+<Attr>
+<Pos l='29' c='9' s='8'/>
+</Attr>
+</Id>
 <Id value='CARDS' typref='1165212998'>
 <Attr>
-<Pos l='26' c='21' s='5'/>
+<Pos l='29' c='21' s='5'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='27' c='24' s='1'/>
+<Pos l='30' c='24' s='1'/>
 </Attr>
 <Unary_Exp op='card' typref='2701647786'>
 <Attr>
-<Pos l='27' c='9' s='4'/>
+<Pos l='30' c='9' s='4'/>
 </Attr>
 <Id value='PLAYABLE' typref='1165212998'>
 <Attr>
-<Pos l='27' c='14' s='8'/>
+<Pos l='30' c='14' s='8'/>
 </Attr>
 </Id>
 </Unary_Exp>
 <Integer_Literal value='52' typref='2701647786'>
 <Attr>
-<Pos l='27' c='26' s='2'/>
+<Pos l='30' c='26' s='2'/>
 </Attr>
 </Integer_Literal>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='29' c='15' s='1'/>
+<Pos l='32' c='15' s='1'/>
 </Attr>
 <Id value='tuple_first' typref='2893448636'>
 <Attr>
-<Pos l='29' c='3' s='11'/>
+<Pos l='32' c='3' s='11'/>
 </Attr>
 </Id>
 <Quantified_Exp type='%' typref='2893448636'>
 <Attr>
-<Pos l='29' c='28' s='1'/>
+<Pos l='32' c='28' s='1'/>
 </Attr>
 <Variables>
 <Id value='ct' typref='1686261355'>
 <Attr>
-<Pos l='29' c='20' s='2'/>
+<Pos l='32' c='20' s='2'/>
 </Attr>
 </Id>
-<Id value='vt' typref='4048836211'>
+<Id value='cv' typref='4048836211'>
 <Attr>
-<Pos l='29' c='24' s='2'/>
+<Pos l='32' c='24' s='2'/>
 </Attr>
 </Id>
 </Variables>
@@ -445,31 +455,31 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='29' c='34' s='1'/>
+<Pos l='32' c='34' s='1'/>
 </Attr>
 <Id value='ct' typref='1686261355'>
 <Attr>
-<Pos l='29' c='31' s='2'/>
+<Pos l='32' c='31' s='2'/>
 </Attr>
 </Id>
 <Id value='CARDS_TYPES' typref='2615387096'>
 <Attr>
-<Pos l='29' c='36' s='11'/>
+<Pos l='32' c='36' s='11'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='29' c='53' s='1'/>
+<Pos l='32' c='53' s='1'/>
 </Attr>
-<Id value='vt' typref='4048836211'>
+<Id value='cv' typref='4048836211'>
 <Attr>
-<Pos l='29' c='50' s='2'/>
+<Pos l='32' c='50' s='2'/>
 </Attr>
 </Id>
 <Id value='CARDS_VALUE' typref='2393683408'>
 <Attr>
-<Pos l='29' c='55' s='11'/>
+<Pos l='32' c='55' s='11'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -478,7 +488,7 @@
 <Body>
 <Id value='ct' typref='1686261355'>
 <Attr>
-<Pos l='29' c='69' s='2'/>
+<Pos l='32' c='69' s='2'/>
 </Attr>
 </Id>
 </Body>
@@ -486,26 +496,26 @@
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='30' c='16' s='1'/>
+<Pos l='33' c='16' s='1'/>
 </Attr>
 <Id value='tuple_second' typref='2476946356'>
 <Attr>
-<Pos l='30' c='3' s='12'/>
+<Pos l='33' c='3' s='12'/>
 </Attr>
 </Id>
 <Quantified_Exp type='%' typref='2476946356'>
 <Attr>
-<Pos l='30' c='29' s='1'/>
+<Pos l='33' c='29' s='1'/>
 </Attr>
 <Variables>
 <Id value='ct' typref='1686261355'>
 <Attr>
-<Pos l='30' c='21' s='2'/>
+<Pos l='33' c='21' s='2'/>
 </Attr>
 </Id>
-<Id value='vt' typref='4048836211'>
+<Id value='cv' typref='4048836211'>
 <Attr>
-<Pos l='30' c='25' s='2'/>
+<Pos l='33' c='25' s='2'/>
 </Attr>
 </Id>
 </Variables>
@@ -513,40 +523,40 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='30' c='35' s='1'/>
+<Pos l='33' c='35' s='1'/>
 </Attr>
 <Id value='ct' typref='1686261355'>
 <Attr>
-<Pos l='30' c='32' s='2'/>
+<Pos l='33' c='32' s='2'/>
 </Attr>
 </Id>
 <Id value='CARDS_TYPES' typref='2615387096'>
 <Attr>
-<Pos l='30' c='37' s='11'/>
+<Pos l='33' c='37' s='11'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='30' c='54' s='1'/>
+<Pos l='33' c='54' s='1'/>
 </Attr>
-<Id value='vt' typref='4048836211'>
+<Id value='cv' typref='4048836211'>
 <Attr>
-<Pos l='30' c='51' s='2'/>
+<Pos l='33' c='51' s='2'/>
 </Attr>
 </Id>
 <Id value='CARDS_VALUE' typref='2393683408'>
 <Attr>
-<Pos l='30' c='56' s='11'/>
+<Pos l='33' c='56' s='11'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Nary_Pred>
 </Pred>
 <Body>
-<Id value='vt' typref='4048836211'>
+<Id value='cv' typref='4048836211'>
 <Attr>
-<Pos l='30' c='70' s='2'/>
+<Pos l='33' c='70' s='2'/>
 </Attr>
 </Id>
 </Body>
@@ -554,211 +564,1801 @@
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='32' c='22' s='1'/>
+<Pos l='35' c='22' s='1'/>
 </Attr>
 <Id value='CARDS_POINTS' typref='1031716423'>
 <Attr>
-<Pos l='32' c='9' s='12'/>
+<Pos l='35' c='9' s='12'/>
 </Attr>
 </Id>
 <Nary_Exp op='{' typref='1031716423'>
 <Attr>
-<Pos l='32' c='24' s='1'/>
+<Pos l='35' c='24' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='33' c='15' s='3'/>
+<Pos l='36' c='15' s='3'/>
 </Attr>
 <Id value='ACE' typref='4048836211'>
 <Attr>
-<Pos l='33' c='11' s='3'/>
+<Pos l='36' c='11' s='3'/>
 </Attr>
 </Id>
 <Integer_Literal value='1' typref='2701647786'>
 <Attr>
-<Pos l='33' c='19' s='1'/>
+<Pos l='36' c='19' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='33' c='26' s='3'/>
+<Pos l='36' c='26' s='3'/>
 </Attr>
 <Id value='ONE' typref='4048836211'>
 <Attr>
-<Pos l='33' c='22' s='3'/>
+<Pos l='36' c='22' s='3'/>
 </Attr>
 </Id>
 <Integer_Literal value='1' typref='2701647786'>
 <Attr>
-<Pos l='33' c='30' s='1'/>
+<Pos l='36' c='30' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='33' c='37' s='3'/>
+<Pos l='36' c='37' s='3'/>
 </Attr>
 <Id value='TWO' typref='4048836211'>
 <Attr>
-<Pos l='33' c='33' s='3'/>
+<Pos l='36' c='33' s='3'/>
 </Attr>
 </Id>
 <Integer_Literal value='2' typref='2701647786'>
 <Attr>
-<Pos l='33' c='41' s='1'/>
+<Pos l='36' c='41' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='34' c='17' s='3'/>
+<Pos l='37' c='17' s='3'/>
 </Attr>
 <Id value='THREE' typref='4048836211'>
 <Attr>
-<Pos l='34' c='11' s='5'/>
+<Pos l='37' c='11' s='5'/>
 </Attr>
 </Id>
 <Integer_Literal value='3' typref='2701647786'>
 <Attr>
-<Pos l='34' c='21' s='1'/>
+<Pos l='37' c='21' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='34' c='29' s='3'/>
+<Pos l='37' c='29' s='3'/>
 </Attr>
 <Id value='FOUR' typref='4048836211'>
 <Attr>
-<Pos l='34' c='24' s='4'/>
+<Pos l='37' c='24' s='4'/>
 </Attr>
 </Id>
 <Integer_Literal value='4' typref='2701647786'>
 <Attr>
-<Pos l='34' c='33' s='1'/>
+<Pos l='37' c='33' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='34' c='41' s='3'/>
+<Pos l='37' c='41' s='3'/>
 </Attr>
 <Id value='FIVE' typref='4048836211'>
 <Attr>
-<Pos l='34' c='36' s='4'/>
+<Pos l='37' c='36' s='4'/>
 </Attr>
 </Id>
 <Integer_Literal value='5' typref='2701647786'>
 <Attr>
-<Pos l='34' c='45' s='1'/>
+<Pos l='37' c='45' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='35' c='15' s='3'/>
+<Pos l='38' c='15' s='3'/>
 </Attr>
 <Id value='SIX' typref='4048836211'>
 <Attr>
-<Pos l='35' c='11' s='3'/>
+<Pos l='38' c='11' s='3'/>
 </Attr>
 </Id>
 <Integer_Literal value='6' typref='2701647786'>
 <Attr>
-<Pos l='35' c='19' s='1'/>
+<Pos l='38' c='19' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='35' c='28' s='3'/>
+<Pos l='38' c='28' s='3'/>
 </Attr>
 <Id value='SEVEN' typref='4048836211'>
 <Attr>
-<Pos l='35' c='22' s='5'/>
+<Pos l='38' c='22' s='5'/>
 </Attr>
 </Id>
 <Integer_Literal value='7' typref='2701647786'>
 <Attr>
-<Pos l='35' c='32' s='1'/>
+<Pos l='38' c='32' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='35' c='41' s='3'/>
+<Pos l='38' c='41' s='3'/>
 </Attr>
 <Id value='EIGHT' typref='4048836211'>
 <Attr>
-<Pos l='35' c='35' s='5'/>
+<Pos l='38' c='35' s='5'/>
 </Attr>
 </Id>
 <Integer_Literal value='8' typref='2701647786'>
 <Attr>
-<Pos l='35' c='45' s='1'/>
+<Pos l='38' c='45' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='36' c='16' s='3'/>
+<Pos l='39' c='16' s='3'/>
 </Attr>
 <Id value='NINE' typref='4048836211'>
 <Attr>
-<Pos l='36' c='11' s='4'/>
+<Pos l='39' c='11' s='4'/>
 </Attr>
 </Id>
 <Integer_Literal value='9' typref='2701647786'>
 <Attr>
-<Pos l='36' c='20' s='1'/>
+<Pos l='39' c='20' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='36' c='29' s='3'/>
+<Pos l='39' c='29' s='3'/>
 </Attr>
 <Id value='KING' typref='4048836211'>
 <Attr>
-<Pos l='36' c='24' s='4'/>
+<Pos l='39' c='24' s='4'/>
 </Attr>
 </Id>
 <Integer_Literal value='10' typref='2701647786'>
 <Attr>
-<Pos l='36' c='33' s='2'/>
+<Pos l='39' c='33' s='2'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='36' c='43' s='3'/>
+<Pos l='39' c='43' s='3'/>
 </Attr>
 <Id value='QUEEN' typref='4048836211'>
 <Attr>
-<Pos l='36' c='37' s='5'/>
+<Pos l='39' c='37' s='5'/>
 </Attr>
 </Id>
 <Integer_Literal value='10' typref='2701647786'>
 <Attr>
-<Pos l='36' c='47' s='2'/>
+<Pos l='39' c='47' s='2'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 <Binary_Exp op='|-&gt;' typref='3545978172'>
 <Attr>
-<Pos l='36' c='56' s='3'/>
+<Pos l='39' c='56' s='3'/>
 </Attr>
 <Id value='JACK' typref='4048836211'>
 <Attr>
-<Pos l='36' c='51' s='4'/>
+<Pos l='39' c='51' s='4'/>
 </Attr>
 </Id>
 <Integer_Literal value='10' typref='2701647786'>
 <Attr>
-<Pos l='36' c='60' s='2'/>
+<Pos l='39' c='60' s='2'/>
 </Attr>
 </Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='42' c='21' s='1'/>
+</Attr>
+<Id value='CARDS_TYPES_ARRAY' typref='2253909711'>
+<Attr>
+<Pos l='42' c='3' s='17'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2253909711'>
+<Attr>
+<Pos l='42' c='23' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='9' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='43' c='7' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='13' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='43' c='20' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='26' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='35' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='43' c='33' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='39' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='48' s='3'/>
+</Attr>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='43' c='46' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='52' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='4' typref='2701647786'>
+<Attr>
+<Pos l='43' c='59' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='65' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='43' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='5' typref='2701647786'>
+<Attr>
+<Pos l='43' c='72' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='43' c='78' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='9' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='2701647786'>
+<Attr>
+<Pos l='44' c='7' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='13' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='2701647786'>
+<Attr>
+<Pos l='44' c='20' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='26' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='35' s='3'/>
+</Attr>
+<Integer_Literal value='8' typref='2701647786'>
+<Attr>
+<Pos l='44' c='33' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='39' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='48' s='3'/>
+</Attr>
+<Integer_Literal value='9' typref='2701647786'>
+<Attr>
+<Pos l='44' c='46' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='52' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='62' s='3'/>
+</Attr>
+<Integer_Literal value='10' typref='2701647786'>
+<Attr>
+<Pos l='44' c='59' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='66' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='44' c='76' s='3'/>
+</Attr>
+<Integer_Literal value='11' typref='2701647786'>
+<Attr>
+<Pos l='44' c='73' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='44' c='80' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='45' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='12' typref='2701647786'>
+<Attr>
+<Pos l='45' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='CLUBS' typref='1686261355'>
+<Attr>
+<Pos l='45' c='14' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='13' typref='2701647786'>
+<Attr>
+<Pos l='46' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='14' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='27' s='3'/>
+</Attr>
+<Integer_Literal value='14' typref='2701647786'>
+<Attr>
+<Pos l='46' c='24' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='31' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='44' s='3'/>
+</Attr>
+<Integer_Literal value='15' typref='2701647786'>
+<Attr>
+<Pos l='46' c='41' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='48' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='16' typref='2701647786'>
+<Attr>
+<Pos l='46' c='58' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='65' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='17' typref='2701647786'>
+<Attr>
+<Pos l='46' c='75' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='82' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='46' c='95' s='3'/>
+</Attr>
+<Integer_Literal value='18' typref='2701647786'>
+<Attr>
+<Pos l='46' c='92' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='46' c='99' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='19' typref='2701647786'>
+<Attr>
+<Pos l='47' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='14' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='27' s='3'/>
+</Attr>
+<Integer_Literal value='20' typref='2701647786'>
+<Attr>
+<Pos l='47' c='24' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='31' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='44' s='3'/>
+</Attr>
+<Integer_Literal value='21' typref='2701647786'>
+<Attr>
+<Pos l='47' c='41' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='48' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='22' typref='2701647786'>
+<Attr>
+<Pos l='47' c='58' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='65' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='23' typref='2701647786'>
+<Attr>
+<Pos l='47' c='75' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='82' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='47' c='95' s='3'/>
+</Attr>
+<Integer_Literal value='24' typref='2701647786'>
+<Attr>
+<Pos l='47' c='92' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='47' c='99' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='48' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='25' typref='2701647786'>
+<Attr>
+<Pos l='48' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='DIAMONDS' typref='1686261355'>
+<Attr>
+<Pos l='48' c='14' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='26' typref='2701647786'>
+<Attr>
+<Pos l='49' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='25' s='3'/>
+</Attr>
+<Integer_Literal value='27' typref='2701647786'>
+<Attr>
+<Pos l='49' c='22' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='29' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='40' s='3'/>
+</Attr>
+<Integer_Literal value='28' typref='2701647786'>
+<Attr>
+<Pos l='49' c='37' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='44' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='55' s='3'/>
+</Attr>
+<Integer_Literal value='29' typref='2701647786'>
+<Attr>
+<Pos l='49' c='52' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='59' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='70' s='3'/>
+</Attr>
+<Integer_Literal value='30' typref='2701647786'>
+<Attr>
+<Pos l='49' c='67' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='74' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='49' c='85' s='3'/>
+</Attr>
+<Integer_Literal value='31' typref='2701647786'>
+<Attr>
+<Pos l='49' c='82' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='49' c='89' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='32' typref='2701647786'>
+<Attr>
+<Pos l='50' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='25' s='3'/>
+</Attr>
+<Integer_Literal value='33' typref='2701647786'>
+<Attr>
+<Pos l='50' c='22' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='29' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='40' s='3'/>
+</Attr>
+<Integer_Literal value='34' typref='2701647786'>
+<Attr>
+<Pos l='50' c='37' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='44' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='55' s='3'/>
+</Attr>
+<Integer_Literal value='35' typref='2701647786'>
+<Attr>
+<Pos l='50' c='52' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='59' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='70' s='3'/>
+</Attr>
+<Integer_Literal value='36' typref='2701647786'>
+<Attr>
+<Pos l='50' c='67' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='74' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='50' c='85' s='3'/>
+</Attr>
+<Integer_Literal value='37' typref='2701647786'>
+<Attr>
+<Pos l='50' c='82' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='50' c='89' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='51' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='38' typref='2701647786'>
+<Attr>
+<Pos l='51' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='HEARTS' typref='1686261355'>
+<Attr>
+<Pos l='51' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='39' typref='2701647786'>
+<Attr>
+<Pos l='52' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='25' s='3'/>
+</Attr>
+<Integer_Literal value='40' typref='2701647786'>
+<Attr>
+<Pos l='52' c='22' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='29' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='40' s='3'/>
+</Attr>
+<Integer_Literal value='41' typref='2701647786'>
+<Attr>
+<Pos l='52' c='37' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='44' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='55' s='3'/>
+</Attr>
+<Integer_Literal value='42' typref='2701647786'>
+<Attr>
+<Pos l='52' c='52' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='59' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='70' s='3'/>
+</Attr>
+<Integer_Literal value='43' typref='2701647786'>
+<Attr>
+<Pos l='52' c='67' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='74' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='52' c='85' s='3'/>
+</Attr>
+<Integer_Literal value='44' typref='2701647786'>
+<Attr>
+<Pos l='52' c='82' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='52' c='89' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='45' typref='2701647786'>
+<Attr>
+<Pos l='53' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='25' s='3'/>
+</Attr>
+<Integer_Literal value='46' typref='2701647786'>
+<Attr>
+<Pos l='53' c='22' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='29' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='40' s='3'/>
+</Attr>
+<Integer_Literal value='47' typref='2701647786'>
+<Attr>
+<Pos l='53' c='37' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='44' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='55' s='3'/>
+</Attr>
+<Integer_Literal value='48' typref='2701647786'>
+<Attr>
+<Pos l='53' c='52' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='59' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='70' s='3'/>
+</Attr>
+<Integer_Literal value='49' typref='2701647786'>
+<Attr>
+<Pos l='53' c='67' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='74' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='53' c='85' s='3'/>
+</Attr>
+<Integer_Literal value='50' typref='2701647786'>
+<Attr>
+<Pos l='53' c='82' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='53' c='89' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='2060905140'>
+<Attr>
+<Pos l='54' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='51' typref='2701647786'>
+<Attr>
+<Pos l='54' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SPADES' typref='1686261355'>
+<Attr>
+<Pos l='54' c='14' s='6'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='57' c='22' s='1'/>
+</Attr>
+<Id value='CARDS_VALUES_ARRAY' typref='1837407431'>
+<Attr>
+<Pos l='57' c='3' s='18'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='1837407431'>
+<Attr>
+<Pos l='57' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='9' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='58' c='7' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='ONE' typref='4048836211'>
+<Attr>
+<Pos l='58' c='13' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='20' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='58' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='TWO' typref='4048836211'>
+<Attr>
+<Pos l='58' c='24' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='31' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='58' c='29' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='THREE' typref='4048836211'>
+<Attr>
+<Pos l='58' c='35' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='44' s='3'/>
+</Attr>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='58' c='42' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='FOUR' typref='4048836211'>
+<Attr>
+<Pos l='58' c='48' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='56' s='3'/>
+</Attr>
+<Integer_Literal value='4' typref='2701647786'>
+<Attr>
+<Pos l='58' c='54' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='FIVE' typref='4048836211'>
+<Attr>
+<Pos l='58' c='60' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='58' c='68' s='3'/>
+</Attr>
+<Integer_Literal value='5' typref='2701647786'>
+<Attr>
+<Pos l='58' c='66' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='SIX' typref='4048836211'>
+<Attr>
+<Pos l='58' c='72' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='9' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='2701647786'>
+<Attr>
+<Pos l='59' c='7' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='SEVEN' typref='4048836211'>
+<Attr>
+<Pos l='59' c='13' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='2701647786'>
+<Attr>
+<Pos l='59' c='20' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='EIGHT' typref='4048836211'>
+<Attr>
+<Pos l='59' c='26' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='35' s='3'/>
+</Attr>
+<Integer_Literal value='8' typref='2701647786'>
+<Attr>
+<Pos l='59' c='33' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='NINE' typref='4048836211'>
+<Attr>
+<Pos l='59' c='39' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='47' s='3'/>
+</Attr>
+<Integer_Literal value='9' typref='2701647786'>
+<Attr>
+<Pos l='59' c='45' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='KING' typref='4048836211'>
+<Attr>
+<Pos l='59' c='51' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='60' s='3'/>
+</Attr>
+<Integer_Literal value='10' typref='2701647786'>
+<Attr>
+<Pos l='59' c='57' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='QUEEN' typref='4048836211'>
+<Attr>
+<Pos l='59' c='64' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='59' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='11' typref='2701647786'>
+<Attr>
+<Pos l='59' c='71' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='JACK' typref='4048836211'>
+<Attr>
+<Pos l='59' c='78' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='60' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='12' typref='2701647786'>
+<Attr>
+<Pos l='60' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ACE' typref='4048836211'>
+<Attr>
+<Pos l='60' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='13' typref='2701647786'>
+<Attr>
+<Pos l='61' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ONE' typref='4048836211'>
+<Attr>
+<Pos l='61' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='14' typref='2701647786'>
+<Attr>
+<Pos l='61' c='19' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='TWO' typref='4048836211'>
+<Attr>
+<Pos l='61' c='26' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='34' s='3'/>
+</Attr>
+<Integer_Literal value='15' typref='2701647786'>
+<Attr>
+<Pos l='61' c='31' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='THREE' typref='4048836211'>
+<Attr>
+<Pos l='61' c='38' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='48' s='3'/>
+</Attr>
+<Integer_Literal value='16' typref='2701647786'>
+<Attr>
+<Pos l='61' c='45' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FOUR' typref='4048836211'>
+<Attr>
+<Pos l='61' c='52' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='17' typref='2701647786'>
+<Attr>
+<Pos l='61' c='58' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FIVE' typref='4048836211'>
+<Attr>
+<Pos l='61' c='65' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='61' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='18' typref='2701647786'>
+<Attr>
+<Pos l='61' c='71' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SIX' typref='4048836211'>
+<Attr>
+<Pos l='61' c='78' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='19' typref='2701647786'>
+<Attr>
+<Pos l='62' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SEVEN' typref='4048836211'>
+<Attr>
+<Pos l='62' c='14' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='24' s='3'/>
+</Attr>
+<Integer_Literal value='20' typref='2701647786'>
+<Attr>
+<Pos l='62' c='21' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='EIGHT' typref='4048836211'>
+<Attr>
+<Pos l='62' c='28' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='38' s='3'/>
+</Attr>
+<Integer_Literal value='21' typref='2701647786'>
+<Attr>
+<Pos l='62' c='35' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='NINE' typref='4048836211'>
+<Attr>
+<Pos l='62' c='42' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='51' s='3'/>
+</Attr>
+<Integer_Literal value='22' typref='2701647786'>
+<Attr>
+<Pos l='62' c='48' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='KING' typref='4048836211'>
+<Attr>
+<Pos l='62' c='55' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='64' s='3'/>
+</Attr>
+<Integer_Literal value='23' typref='2701647786'>
+<Attr>
+<Pos l='62' c='61' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='QUEEN' typref='4048836211'>
+<Attr>
+<Pos l='62' c='68' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='62' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='24' typref='2701647786'>
+<Attr>
+<Pos l='62' c='75' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='JACK' typref='4048836211'>
+<Attr>
+<Pos l='62' c='82' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='63' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='25' typref='2701647786'>
+<Attr>
+<Pos l='63' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ACE' typref='4048836211'>
+<Attr>
+<Pos l='63' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='26' typref='2701647786'>
+<Attr>
+<Pos l='64' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ONE' typref='4048836211'>
+<Attr>
+<Pos l='64' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='27' typref='2701647786'>
+<Attr>
+<Pos l='64' c='19' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='TWO' typref='4048836211'>
+<Attr>
+<Pos l='64' c='26' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='34' s='3'/>
+</Attr>
+<Integer_Literal value='28' typref='2701647786'>
+<Attr>
+<Pos l='64' c='31' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='THREE' typref='4048836211'>
+<Attr>
+<Pos l='64' c='38' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='48' s='3'/>
+</Attr>
+<Integer_Literal value='29' typref='2701647786'>
+<Attr>
+<Pos l='64' c='45' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FOUR' typref='4048836211'>
+<Attr>
+<Pos l='64' c='52' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='30' typref='2701647786'>
+<Attr>
+<Pos l='64' c='58' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FIVE' typref='4048836211'>
+<Attr>
+<Pos l='64' c='65' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='64' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='31' typref='2701647786'>
+<Attr>
+<Pos l='64' c='71' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SIX' typref='4048836211'>
+<Attr>
+<Pos l='64' c='78' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='32' typref='2701647786'>
+<Attr>
+<Pos l='65' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SEVEN' typref='4048836211'>
+<Attr>
+<Pos l='65' c='14' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='24' s='3'/>
+</Attr>
+<Integer_Literal value='33' typref='2701647786'>
+<Attr>
+<Pos l='65' c='21' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='EIGHT' typref='4048836211'>
+<Attr>
+<Pos l='65' c='28' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='38' s='3'/>
+</Attr>
+<Integer_Literal value='34' typref='2701647786'>
+<Attr>
+<Pos l='65' c='35' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='NINE' typref='4048836211'>
+<Attr>
+<Pos l='65' c='42' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='51' s='3'/>
+</Attr>
+<Integer_Literal value='35' typref='2701647786'>
+<Attr>
+<Pos l='65' c='48' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='KING' typref='4048836211'>
+<Attr>
+<Pos l='65' c='55' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='64' s='3'/>
+</Attr>
+<Integer_Literal value='36' typref='2701647786'>
+<Attr>
+<Pos l='65' c='61' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='QUEEN' typref='4048836211'>
+<Attr>
+<Pos l='65' c='68' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='65' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='37' typref='2701647786'>
+<Attr>
+<Pos l='65' c='75' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='JACK' typref='4048836211'>
+<Attr>
+<Pos l='65' c='82' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='66' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='38' typref='2701647786'>
+<Attr>
+<Pos l='66' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ACE' typref='4048836211'>
+<Attr>
+<Pos l='66' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='39' typref='2701647786'>
+<Attr>
+<Pos l='67' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ONE' typref='4048836211'>
+<Attr>
+<Pos l='67' c='14' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='22' s='3'/>
+</Attr>
+<Integer_Literal value='40' typref='2701647786'>
+<Attr>
+<Pos l='67' c='19' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='TWO' typref='4048836211'>
+<Attr>
+<Pos l='67' c='26' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='34' s='3'/>
+</Attr>
+<Integer_Literal value='41' typref='2701647786'>
+<Attr>
+<Pos l='67' c='31' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='THREE' typref='4048836211'>
+<Attr>
+<Pos l='67' c='38' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='48' s='3'/>
+</Attr>
+<Integer_Literal value='42' typref='2701647786'>
+<Attr>
+<Pos l='67' c='45' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FOUR' typref='4048836211'>
+<Attr>
+<Pos l='67' c='52' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='61' s='3'/>
+</Attr>
+<Integer_Literal value='43' typref='2701647786'>
+<Attr>
+<Pos l='67' c='58' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='FIVE' typref='4048836211'>
+<Attr>
+<Pos l='67' c='65' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='67' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='44' typref='2701647786'>
+<Attr>
+<Pos l='67' c='71' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SIX' typref='4048836211'>
+<Attr>
+<Pos l='67' c='78' s='3'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='45' typref='2701647786'>
+<Attr>
+<Pos l='68' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='SEVEN' typref='4048836211'>
+<Attr>
+<Pos l='68' c='14' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='24' s='3'/>
+</Attr>
+<Integer_Literal value='46' typref='2701647786'>
+<Attr>
+<Pos l='68' c='21' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='EIGHT' typref='4048836211'>
+<Attr>
+<Pos l='68' c='28' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='38' s='3'/>
+</Attr>
+<Integer_Literal value='47' typref='2701647786'>
+<Attr>
+<Pos l='68' c='35' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='NINE' typref='4048836211'>
+<Attr>
+<Pos l='68' c='42' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='51' s='3'/>
+</Attr>
+<Integer_Literal value='48' typref='2701647786'>
+<Attr>
+<Pos l='68' c='48' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='KING' typref='4048836211'>
+<Attr>
+<Pos l='68' c='55' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='64' s='3'/>
+</Attr>
+<Integer_Literal value='49' typref='2701647786'>
+<Attr>
+<Pos l='68' c='61' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='QUEEN' typref='4048836211'>
+<Attr>
+<Pos l='68' c='68' s='5'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='68' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='50' typref='2701647786'>
+<Attr>
+<Pos l='68' c='75' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='JACK' typref='4048836211'>
+<Attr>
+<Pos l='68' c='82' s='4'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='1279940284'>
+<Attr>
+<Pos l='69' c='10' s='3'/>
+</Attr>
+<Integer_Literal value='51' typref='2701647786'>
+<Attr>
+<Pos l='69' c='7' s='2'/>
+</Attr>
+</Integer_Literal>
+<Id value='ACE' typref='4048836211'>
+<Attr>
+<Pos l='69' c='14' s='3'/>
+</Attr>
+</Id>
 </Binary_Exp>
 </Nary_Exp>
 </Exp_Comparison>
@@ -830,6 +2430,22 @@
 </Binary_Exp>
 </Unary_Exp>
 </Type>
+<Type id='2253909711'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='CARDS_TYPES'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='1837407431'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='CARDS_VALUE'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
 <Type id='2846838589'>
 <Unary_Exp op='POW'>
 <Unary_Exp op='POW'>
@@ -847,6 +2463,18 @@
 <Binary_Exp op='*'>
 <Id value='CARDS_VALUE'/>
 <Id value='INTEGER'/>
+</Binary_Exp>
+</Type>
+<Type id='2060905140'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='CARDS_TYPES'/>
+</Binary_Exp>
+</Type>
+<Type id='1279940284'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='CARDS_VALUE'/>
 </Binary_Exp>
 </Type>
 </TypeInfos>

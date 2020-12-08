@@ -195,7 +195,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Game_TEMP))==(btrue);
-  Context_List_Properties(Machine(Game_TEMP))==(CARDS <: CARDS_TYPES*CARDS_VALUE & CARDS = CARDS_TYPES*CARDS_VALUE & CARDS: FIN(CARDS) & PLAYABLE <: (CARDS_TYPES-{NOTYPE})*(CARDS_VALUE-{NOVALUE}) & PLAYABLE = (CARDS_TYPES-{NOTYPE})*(CARDS_VALUE-{NOVALUE}) & PLAYABLE: FIN(PLAYABLE) & PLAYABLE <: CARDS & card(PLAYABLE) = 52 & tuple_first = %(ct,vt).(ct: CARDS_TYPES & vt: CARDS_VALUE | ct) & tuple_second = %(ct,vt).(ct: CARDS_TYPES & vt: CARDS_VALUE | vt) & CARDS_POINTS = {ACE|->1,ONE|->1,TWO|->2,THREE|->3,FOUR|->4,FIVE|->5,SIX|->6,SEVEN|->7,EIGHT|->8,NINE|->9,KING|->10,QUEEN|->10,JACK|->10} & CARDS_TYPES: FIN(INTEGER) & not(CARDS_TYPES = {}) & CARDS_VALUE: FIN(INTEGER) & not(CARDS_VALUE = {}) & PLAYERS: FIN(INTEGER) & not(PLAYERS = {}));
+  Context_List_Properties(Machine(Game_TEMP))==(CARDS <: CARDS_TYPES*CARDS_VALUE & CARDS = CARDS_TYPES*CARDS_VALUE & CARDS: FIN(CARDS) & PLAYABLE <: (CARDS_TYPES-{NOTYPE})*(CARDS_VALUE-{NOVALUE}) & PLAYABLE = (CARDS_TYPES-{NOTYPE})*(CARDS_VALUE-{NOVALUE}) & PLAYABLE: FIN(PLAYABLE) & PLAYABLE <: CARDS & card(PLAYABLE) = 52 & tuple_first = %(ct,cv).(ct: CARDS_TYPES & cv: CARDS_VALUE | ct) & tuple_second = %(ct,cv).(ct: CARDS_TYPES & cv: CARDS_VALUE | cv) & CARDS_POINTS = {ACE|->1,ONE|->1,TWO|->2,THREE|->3,FOUR|->4,FIVE|->5,SIX|->6,SEVEN|->7,EIGHT|->8,NINE|->9,KING|->10,QUEEN|->10,JACK|->10} & CONCRETE_PLAYABLE_ARRAY = {0|->(CLUBS|->ONE),1|->(CLUBS|->TWO),2|->(CLUBS|->THREE),3|->(CLUBS|->FOUR),4|->(CLUBS|->FIVE),5|->(CLUBS|->SIX),6|->(CLUBS|->SEVEN),7|->(CLUBS|->EIGHT),8|->(CLUBS|->NINE),9|->(CLUBS|->KING),10|->(CLUBS|->QUEEN),11|->(CLUBS|->JACK),12|->(CLUBS|->ACE),13|->(DIAMONDS|->ONE),14|->(DIAMONDS|->TWO),15|->(DIAMONDS|->THREE),16|->(DIAMONDS|->FOUR),17|->(DIAMONDS|->FIVE),18|->(DIAMONDS|->SIX),19|->(DIAMONDS|->SEVEN),20|->(DIAMONDS|->EIGHT),21|->(DIAMONDS|->NINE),22|->(DIAMONDS|->KING),23|->(DIAMONDS|->QUEEN),24|->(DIAMONDS|->JACK),25|->(DIAMONDS|->ACE),26|->(HEARTS|->ONE),27|->(HEARTS|->TWO),28|->(HEARTS|->THREE),29|->(HEARTS|->FOUR),30|->(HEARTS|->FIVE),31|->(HEARTS|->SIX),32|->(HEARTS|->SEVEN),33|->(HEARTS|->EIGHT),34|->(HEARTS|->NINE),35|->(HEARTS|->KING),36|->(HEARTS|->QUEEN),37|->(HEARTS|->JACK),38|->(HEARTS|->ACE),39|->(SPADES|->ONE),40|->(SPADES|->TWO),41|->(SPADES|->THREE),42|->(SPADES|->FOUR),43|->(SPADES|->FIVE),44|->(SPADES|->SIX),45|->(SPADES|->SEVEN),46|->(SPADES|->EIGHT),47|->(SPADES|->NINE),48|->(SPADES|->KING),49|->(SPADES|->QUEEN),50|->(SPADES|->JACK),51|->(SPADES|->ACE)} & CONCRETE_PLAYABLE_ARRAY: 0..51 --> PLAYABLE & CARDS_TYPES: FIN(INTEGER) & not(CARDS_TYPES = {}) & CARDS_VALUE: FIN(INTEGER) & not(CARDS_VALUE = {}) & PLAYERS: FIN(INTEGER) & not(PLAYERS = {}));
   Inherited_List_Properties(Machine(Game_TEMP))==(btrue);
   List_Properties(Machine(Game_TEMP))==(btrue)
 END
@@ -228,9 +228,9 @@ THEORY ListOfIdsX IS
   List_Of_VisibleCst_Ids(Machine(Game_TEMP)) == (?);
   List_Of_VisibleVar_Ids(Machine(Game_TEMP)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Game_TEMP)) == (?: ?);
-  List_Of_Ids(Machine(Game_cards)) == (CARDS_POINTS,CARDS_TYPES,CARDS_VALUE,PLAYERS,CLUBS,DIAMONDS,HEARTS,SPADES,NOTYPE,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,KING,QUEEN,JACK,ACE,NOVALUE,P_ONE,P_TWO,NOPLAYER | ? | ? | ? | ? | ? | ? | ? | Game_cards);
+  List_Of_Ids(Machine(Game_cards)) == (CARDS_POINTS,CONCRETE_PLAYABLE_ARRAY,CARDS_TYPES,CARDS_VALUE,PLAYERS,CLUBS,DIAMONDS,HEARTS,SPADES,NOTYPE,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,KING,QUEEN,JACK,ACE,NOVALUE,P_ONE,P_TWO,NOPLAYER | ? | ? | ? | ? | ? | ? | ? | Game_cards);
   List_Of_HiddenCst_Ids(Machine(Game_cards)) == (tuple_second,tuple_first,PLAYABLE,CARDS | ?);
-  List_Of_VisibleCst_Ids(Machine(Game_cards)) == (CARDS_POINTS);
+  List_Of_VisibleCst_Ids(Machine(Game_cards)) == (CARDS_POINTS,CONCRETE_PLAYABLE_ARRAY);
   List_Of_VisibleVar_Ids(Machine(Game_cards)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Game_cards)) == (?: ?)
 END

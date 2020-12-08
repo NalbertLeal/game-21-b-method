@@ -1,0 +1,90 @@
+<Proof_Obligations>
+<Define name="B definitions" merge="=">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx" merge="="/>
+<Define name="seext" merge="="/>
+<Define name="mchcst" merge="="/>
+<Define name="aprp" merge="="/>
+<Define name="abs" merge="="/>
+<Define name="inv" merge="="/>
+<Define name="ass" merge="="/>
+<Define name="imlprp" merge="="/>
+<Define name="imprp" merge="="/>
+<Define name="imext" merge="="/>
+<Proof_Obligation>
+<Comment>Valuation dans une implantation</Comment>
+<Tag>ValuesLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="imprp"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une implantation</Comment>
+<Tag>Initialisation</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imprp"/>
+<Hypothesis/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+</Proof_Obligation>
+<TypeInfos/>
+</Proof_Obligations>

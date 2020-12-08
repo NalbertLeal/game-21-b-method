@@ -1,0 +1,139 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx"/>
+<Define name="seext"/>
+<Define name="mchcst"/>
+<Define name="aprp"/>
+<Define name="abs"/>
+<Define name="inv"/>
+<Define name="ass"/>
+<Define name="imlprp"/>
+<Define name="imprp"/>
+<Define name="imext"/>
+<Proof_Obligation>
+<Comment>Valuation dans une implantation</Comment>
+<Tag>ValuesLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="imprp"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Valuation is correct">
+<Quantified_Pred type="#">
+<Variables/>
+<Body>
+<Sub_Calculus>
+<Nary_Sub op=";"/>
+<Nary_Pred op="&amp;"/>
+</Sub_Calculus>
+</Body>
+</Quantified_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une implantation</Comment>
+<Tag>Initialisation</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Refinement is correct">
+<Sub_Calculus overflow="true">
+<Nary_Sub op=";">
+<Skip tag="C:\Users\nalbe\Downloads\programing\b_method\parametros\game21\bdp\Game_ctx_i.bxml:1:2:1"/>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Not>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Skip tag="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21/bdp\Game_ctx.bxml:1:1:1"/>
+</Nary_Sub>
+<Not>
+<Nary_Pred op="&amp;"/>
+</Not>
+</Sub_Calculus>
+</Not>
+</Binary_Pred>
+</Sub_Calculus>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imprp"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos/>
+</Proof_Obligations>

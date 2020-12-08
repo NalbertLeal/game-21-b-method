@@ -1,0 +1,8 @@
+<Machine name='Game_ctx_i' type='implementation'>
+<Abstraction>Game_ctx</Abstraction>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos/>
+
+</Machine>

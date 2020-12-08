@@ -1,0 +1,353 @@
+/* Game_i
+ * Author: Nalbert Gabriel Melo Leal
+ * Creation date: 07/12/2020
+ */
+
+IMPLEMENTATION Game_i
+REFINES Game_r
+SEES Game_cards, Game_ctx
+CONCRETE_VARIABLES
+  all_cards_t_i,
+  all_cards_v_i,
+  deck_i,
+  discart_i,
+  player_one_hand_i,
+  player_one_points_i,
+  player_two_hand_i,
+  player_two_points_i,
+  top_deck_i,
+  top_deck_points_i,
+  current_player_i,
+  game_over_i 
+INVARIANT
+  all_cards_t_i : (0..51) --> CARDS_TYPES &
+//  !ii . (ii : 0..51 => all_cards_t(ii) = all_cards_t_i(ii) ) &
+  all_cards_v_i : (0..51) --> CARDS_VALUE &
+//  !ii . (ii : 0..51 => all_cards_v(ii) = all_cards_v_i(ii) ) &
+
+  deck_i : (0..51) --> BOOL &
+  !ii . (ii : 0..51 => (deck_r(ii) = TRUE) <=> (deck_i(ii) = TRUE)) &
+
+  discart_i : (0..51) --> BOOL &
+  !ii . (ii : 0..51 => (discart_r(ii) = TRUE) <=> (discart_i(ii) = TRUE)) &
+
+  player_one_hand_i : (0..51) --> BOOL &
+  !ii . (ii : 0..51 => (player_one_hand_r(ii) = TRUE) <=> (player_one_hand_i(ii) = TRUE)) &
+
+  player_one_points_i : NAT &
+  player_two_points_r = player_one_points_i &
+
+  player_two_hand_i : (0..51) --> BOOL &
+  !ii . (ii : 0..51 => (player_two_hand_r(ii) = TRUE) <=> (player_two_hand_i(ii) = TRUE)) &
+
+  player_two_points_i : NAT &
+  player_two_points_r = player_two_points_i &
+  
+  current_player_i : PLAYERS &
+  current_player_r = current_player_i &
+  
+  top_deck_i : INT &
+  top_deck_r = top_deck_i &
+  
+  top_deck_points_i : NAT &
+  top_deck_points_r = top_deck_points_i &
+
+  game_over_i : BOOL &
+  game_over_r = game_over_i 
+INITIALISATION
+  all_cards_t_i := CARDS_TYPES_ARRAY;
+  all_cards_v_i := CARDS_VALUES_ARRAY;
+
+  deck_i := (0..51)*{TRUE};
+
+  discart_i := (0..51)*{FALSE};
+
+  player_one_hand_i := (0..51)*{FALSE};
+  player_one_points_i := 0;
+
+  player_two_hand_i := (0..51)*{FALSE};
+  player_two_points_i := 0;
+
+  top_deck_i := -1;
+  top_deck_points_i := 0;
+
+  current_player_i := P_ONE;
+
+  game_over_i := FALSE
+OPERATIONS
+  init_deck=
+    BEGIN
+      deck_i := (0..51)*{TRUE}
+    END;
+    
+  init_hands =
+    BEGIN
+      // IGNORE OS WARNINGS, ESTA CORRETO
+      deck_i(0) := FALSE;
+      deck_i(1) := FALSE;
+      deck_i(2) := FALSE;
+      deck_i(3) := FALSE;
+      deck_i(4) := FALSE;
+      deck_i(5) := FALSE;
+      
+      player_one_hand_i(0) := TRUE;
+      player_one_hand_i(1) := TRUE;
+      player_one_hand_i(2) := TRUE;
+      
+      player_two_hand_i(3) := TRUE;
+      player_two_hand_i(4) := TRUE;
+      player_two_hand_i(5) := TRUE
+    END;
+ 
+  init_hands_points =
+    BEGIN
+      // IGNORE OS WARNINGS, ESTA CORRETO
+      VAR value IN
+        value := all_cards_v_i(0);
+        IF value = ACE or value = ONE THEN
+				  player_one_points_i := player_one_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_one_points_i := player_one_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_one_points_i := player_one_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_one_points_i := player_one_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_one_points_i := player_one_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_one_points_i := player_one_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_one_points_i := player_one_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_one_points_i := player_one_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_one_points_i := player_one_points_i + 9
+  			ELSE 
+  			  player_one_points_i := player_one_points_i + 10
+  	  	END;
+
+  	  	value := all_cards_v_i(1);
+        IF value = ACE or value = ONE THEN
+				  player_one_points_i := player_one_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_one_points_i := player_one_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_one_points_i := player_one_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_one_points_i := player_one_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_one_points_i := player_one_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_one_points_i := player_one_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_one_points_i := player_one_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_one_points_i := player_one_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_one_points_i := player_one_points_i + 9
+  			ELSE 
+  			  player_one_points_i := player_one_points_i + 10
+  	  	END;
+
+  	  	value := all_cards_v_i(2);
+        IF value = ACE or value = ONE THEN
+				  player_one_points_i := player_one_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_one_points_i := player_one_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_one_points_i := player_one_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_one_points_i := player_one_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_one_points_i := player_one_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_one_points_i := player_one_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_one_points_i := player_one_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_one_points_i := player_one_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_one_points_i := player_one_points_i + 9
+  			ELSE 
+  			  player_one_points_i := player_one_points_i + 10
+  	  	END;
+  	  	
+        value := all_cards_v_i(3);
+        IF value = ACE or value = ONE THEN
+				  player_two_points_i := player_two_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_two_points_i := player_two_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_two_points_i := player_two_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_two_points_i := player_two_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_two_points_i := player_two_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_two_points_i := player_two_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_two_points_i := player_two_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_two_points_i := player_two_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_two_points_i := player_two_points_i + 9
+  			ELSE 
+  			  player_two_points_i := player_two_points_i + 10
+  	  	END;
+
+  	  	value := all_cards_v_i(4);
+        IF value = ACE or value = ONE THEN
+				  player_two_points_i := player_two_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_two_points_i := player_two_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_two_points_i := player_two_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_two_points_i := player_two_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_two_points_i := player_two_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_two_points_i := player_two_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_two_points_i := player_two_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_two_points_i := player_two_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_two_points_i := player_two_points_i + 9
+  			ELSE 
+  			  player_two_points_i := player_two_points_i + 10
+  	  	END;
+
+  	  	value := all_cards_v_i(5);
+        IF value = ACE or value = ONE THEN
+				  player_two_points_i := player_two_points_i + 1
+  			ELSIF value = TWO THEN
+  				player_two_points_i := player_two_points_i + 2
+  			ELSIF value = THREE THEN
+  				player_two_points_i := player_two_points_i + 3
+  			ELSIF value = FOUR THEN
+  				player_two_points_i := player_two_points_i + 4
+  			ELSIF value = FIVE THEN
+  				player_two_points_i := player_two_points_i + 5
+  			ELSIF value = SIX THEN
+  				player_two_points_i := player_two_points_i + 6
+  			ELSIF value = SEVEN THEN
+  				player_two_points_i := player_two_points_i + 7
+  			ELSIF value = EIGHT THEN
+  				player_two_points_i := player_two_points_i + 8
+  			ELSIF value = NINE THEN
+  				player_two_points_i := player_two_points_i + 9
+  			ELSE 
+  			  player_two_points_i := player_two_points_i + 10
+  	  	END
+      END
+      
+//      player_one_points_i := CARDS_POINTS( all_cards_v_i(0) ) +
+//        CARDS_POINTS( all_cards_v_i(1) ) +
+//        CARDS_POINTS( all_cards_v_i(2) );
+//      player_two_points_i := CARDS_POINTS( all_cards_v_i(3) ) +
+//        CARDS_POINTS( all_cards_v_i(4) ) +
+//        CARDS_POINTS( all_cards_v_i(5) )
+    END;
+    
+  update_top_deck = 
+    BEGIN
+      // IGNORE OS WARNINGS, ESTA CORRETO
+      // o deck SEMPRE mantem a ordem das cartas, msm após o reset
+      // logo a 1ª carta do deck é a 1ª carta do deck_r
+      VAR ii, value IN
+        ii := 0;
+        value := deck_i(ii);
+        WHILE ii <= 51 DO
+          IF top_deck_i /= -1 & value = TRUE THEN
+            top_deck_i := ii
+          END;
+          ii := ii + 1
+        INVARIANT ii: NAT
+        VARIANT 51 - ii
+        END
+      END;
+      // já que top_deck = top_deck_r e que CARDS_POINTS
+      // retorna a pontuação das cartas temos que
+      // top_deck_points = top_deck_points_i
+      
+//      top_deck_points_i := CARDS_POINTS(
+//        all_cards_v_i( // o par PLAYABLE nesse indice
+//          top_deck_i // a carta de deck_r com menor indice
+//        )
+//      )
+      
+      VAR value IN 
+        value := all_cards_v_i(top_deck_i);
+        IF value = ACE or value = ONE THEN
+				  top_deck_points_i := 1
+  			ELSIF value = TWO THEN
+  				top_deck_points_i := 2
+  			ELSIF value = THREE THEN
+  				top_deck_points_i := 3
+  			ELSIF value = FOUR THEN
+  				top_deck_points_i := 4
+  			ELSIF value = FIVE THEN
+  				top_deck_points_i := 5
+  			ELSIF value = SIX THEN
+  				top_deck_points_i := 6
+  			ELSIF value = SEVEN THEN
+  				top_deck_points_i := 7
+  			ELSIF value = EIGHT THEN
+  				top_deck_points_i := 8
+  			ELSIF value = NINE THEN
+  				top_deck_points_i := 9
+  			ELSE 
+  			  top_deck_points_i := 10
+  	  	END
+      END
+    END;
+    
+  reset_deck =
+    BEGIN
+      deck_i := discart_i;
+      discart_i := (0..51)*{FALSE}
+    END;
+    
+  player_one_play = 
+    BEGIN
+      VAR value IN
+        value := top_deck_points_i + player_one_points_i;
+			  IF value < 22 THEN
+  				player_one_points_i := value;
+  				IF player_one_points_i = 21 THEN
+  					game_over_i := TRUE
+  				ELSE
+  					game_over_i := FALSE
+  				END
+  			ELSE
+  				discart_i(top_deck_i) := TRUE;
+  				deck_i(top_deck_i) := FALSE
+  			END
+  		END;
+      current_player_i := P_TWO;
+			top_deck_i := -1;
+			top_deck_points_i := 0
+    END;
+    
+  player_two_play = 
+    BEGIN
+			VAR value IN
+        value := top_deck_points_i + player_two_points_i;
+			  IF value < 22 THEN
+				  player_two_points_i := value;
+  				IF player_two_points_i = 21 THEN
+  					game_over_i := TRUE
+  				ELSE
+  					game_over_i := FALSE
+  				END
+  			ELSE
+  				discart_i(top_deck_i) := TRUE;
+  				deck_i(top_deck_i) := FALSE
+  			END
+			END;
+      current_player_i := P_ONE;
+			top_deck_i := -1;
+			top_deck_points_i := 0
+    END
+END

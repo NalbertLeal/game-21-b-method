@@ -16,14 +16,17 @@
         <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_ctx" suffix="mch" user="nalbe">
             <component name="Game_ctx" type="specification" />
         </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_ctx_i" suffix="imp" user="nalbe">
+            <component name="Game_ctx_i" type="implementation" />
+        </component_file>
         <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_ctx_r" suffix="ref" user="nalbe">
             <component name="Game_ctx_r" type="refinement" />
         </component_file>
+        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_i" suffix="imp" user="nalbe">
+            <component name="Game_i" type="implementation" />
+        </component_file>
         <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_r" suffix="ref" user="nalbe">
             <component name="Game_r" type="refinement" />
-        </component_file>
-        <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="Game_r2" suffix="ref" user="nalbe">
-            <component name="Game_r2" type="refinement" />
         </component_file>
         <component_file path="C:/Users/nalbe/Downloads/programing/b_method/parametros/game21" name="game" suffix="mch" user="nalbe">
             <component name="game" type="specification" />

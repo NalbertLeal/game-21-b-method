@@ -1,0 +1,10 @@
+﻿/* Game_ctx_i
+ * Author: Nalbert Gabriel Melo Leal
+ * Creation date: 08/12/2020
+ */
+
+IMPLEMENTATION Game_ctx_i
+REFINES Game_ctx
+
+
+ END
