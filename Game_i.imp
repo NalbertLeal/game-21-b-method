@@ -109,7 +109,6 @@ OPERATIONS
  
   init_hands_points =
     BEGIN
-      // IGNORE OS WARNINGS, ESTA CORRETO
       VAR value IN
         value := all_cards_v_i(0);
         IF value = ACE or value = ONE THEN
@@ -249,13 +248,6 @@ OPERATIONS
   			  player_two_points_i := player_two_points_i + 10
   	  	END
       END
-      
-//      player_one_points_i := CARDS_POINTS( all_cards_v_i(0) ) +
-//        CARDS_POINTS( all_cards_v_i(1) ) +
-//        CARDS_POINTS( all_cards_v_i(2) );
-//      player_two_points_i := CARDS_POINTS( all_cards_v_i(3) ) +
-//        CARDS_POINTS( all_cards_v_i(4) ) +
-//        CARDS_POINTS( all_cards_v_i(5) )
     END;
     
   update_top_deck = 
@@ -279,13 +271,6 @@ OPERATIONS
       // já que top_deck = top_deck_r e que CARDS_POINTS
       // retorna a pontuação das cartas temos que
       // top_deck_points = top_deck_points_i
-      
-//      top_deck_points_i := CARDS_POINTS(
-//        all_cards_v_i( // o par PLAYABLE nesse indice
-//          top_deck_i // a carta de deck_r com menor indice
-//        )
-//      )
-      
       VAR value IN 
         value := all_cards_v_i(top_deck_i);
         IF value = ACE or value = ONE THEN
