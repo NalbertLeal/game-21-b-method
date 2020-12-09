@@ -5,7 +5,7 @@
 
 IMPLEMENTATION Game_i
 REFINES Game_r
-SEES Game_cards, Game_ctx
+SEES Game_cards
 CONCRETE_VARIABLES
   all_cards_t_i,
   all_cards_v_i,
@@ -75,6 +75,9 @@ INITIALISATION
 
   game_over_i := FALSE
 OPERATIONS
+  bb <-- get_game_over = bb := game_over_i;
+  
+  
   init_deck=
     BEGIN
       deck_i := (0..51)*{TRUE}
@@ -257,10 +260,11 @@ OPERATIONS
       // logo a 1ª carta do deck é a 1ª carta do deck_r
       VAR ii, value IN
         ii := 0;
-        value := deck_i(ii);
         WHILE ii <= 51 DO
-          IF top_deck_i /= -1 & value = TRUE THEN
-            top_deck_i := ii
+          value := deck_i(ii);
+          IF top_deck_i = -1 & value = TRUE THEN
+            top_deck_i := ii;
+            deck_i(ii) := FALSE
           END;
           ii := ii + 1
         INVARIANT ii: NAT
@@ -314,6 +318,7 @@ OPERATIONS
       VAR value IN
         value := top_deck_points_i + player_one_points_i;
 			  IF value < 22 THEN
+			    player_one_hand_i(top_deck_i) := TRUE;
   				player_one_points_i := value;
   				IF player_one_points_i = 21 THEN
   					game_over_i := TRUE
@@ -335,6 +340,7 @@ OPERATIONS
 			VAR value IN
         value := top_deck_points_i + player_two_points_i;
 			  IF value < 22 THEN
+			    player_two_hand_i(top_deck_i) := TRUE;
 				  player_two_points_i := value;
   				IF player_two_points_i = 21 THEN
   					game_over_i := TRUE

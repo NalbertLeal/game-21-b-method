@@ -14,7 +14,7 @@ THEORY LoadedStructureX IS
 END
 &
 THEORY ListSeesX IS
-  List_Sees(Refinement(Game_r))==(Game_cards,Game_ctx)
+  List_Sees(Refinement(Game_r))==(Game_cards)
 END
 &
 THEORY ListIncludesX IS
@@ -86,11 +86,12 @@ THEORY ListInitialisationX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Refinement(Game_r))==(init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play);
-  List_Operations(Refinement(Game_r))==(init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play)
+  Internal_List_Operations(Refinement(Game_r))==(get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play);
+  List_Operations(Refinement(Game_r))==(get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play)
 END
 &
 THEORY ListInputX IS
+  List_Input(Refinement(Game_r),get_game_over)==(?);
   List_Input(Refinement(Game_r),init_deck)==(?);
   List_Input(Refinement(Game_r),init_hands)==(?);
   List_Input(Refinement(Game_r),init_hands_points)==(?);
@@ -101,6 +102,7 @@ THEORY ListInputX IS
 END
 &
 THEORY ListOutputX IS
+  List_Output(Refinement(Game_r),get_game_over)==(bb);
   List_Output(Refinement(Game_r),init_deck)==(?);
   List_Output(Refinement(Game_r),init_hands)==(?);
   List_Output(Refinement(Game_r),init_hands_points)==(?);
@@ -111,6 +113,7 @@ THEORY ListOutputX IS
 END
 &
 THEORY ListHeaderX IS
+  List_Header(Refinement(Game_r),get_game_over)==(bb <-- get_game_over);
   List_Header(Refinement(Game_r),init_deck)==(init_deck);
   List_Header(Refinement(Game_r),init_hands)==(init_hands);
   List_Header(Refinement(Game_r),init_hands_points)==(init_hands_points);
@@ -123,6 +126,8 @@ END
 THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
+  Own_Precondition(Refinement(Game_r),get_game_over)==(btrue);
+  List_Precondition(Refinement(Game_r),get_game_over)==(btrue);
   Own_Precondition(Refinement(Game_r),init_deck)==(btrue);
   List_Precondition(Refinement(Game_r),init_deck)==(game_over = FALSE & deck = {} & discart = {} & player_one_hand = {} & player_two_hand = {});
   Own_Precondition(Refinement(Game_r),init_hands)==(btrue);
@@ -147,6 +152,8 @@ THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Refinement(Game_r),init_hands_points)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand/={} & player_two_hand/={} & player_one_points = 0 & player_two_points = 0 & size(player_one_hand) = 3 & size(player_two_hand) = 3 | player_one_points_r:=CARDS_POINTS(all_cards_v(0))+CARDS_POINTS(all_cards_v(1))+CARDS_POINTS(all_cards_v(2));player_two_points_r:=CARDS_POINTS(all_cards_v(3))+CARDS_POINTS(all_cards_v(4))+CARDS_POINTS(all_cards_v(5)));
   Expanded_List_Substitution(Refinement(Game_r),init_hands)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand = {} & player_two_hand = {} & deck: seq(ran(deck)) & 3: 0..size(deck) & 3: 0..size(deck\|/3) & deck\|/3/|\3: seq(PLAYABLE) & deck\|/6: FIN(deck\|/6) & 6: 0..size(deck) | deck_r:={0|->FALSE,1|->FALSE,2|->FALSE,3|->FALSE,4|->FALSE,5|->FALSE};player_one_hand_r:={0|->TRUE,1|->TRUE,2|->TRUE};player_two_hand_r:={3|->TRUE,4|->TRUE,5|->TRUE});
   Expanded_List_Substitution(Refinement(Game_r),init_deck)==(game_over = FALSE & deck = {} & discart = {} & player_one_hand = {} & player_two_hand = {} | deck_r:=(0..51)*{TRUE});
+  Expanded_List_Substitution(Refinement(Game_r),get_game_over)==(btrue | bb:=game_over_r);
+  List_Substitution(Refinement(Game_r),get_game_over)==(bb:=game_over_r);
   List_Substitution(Refinement(Game_r),init_deck)==(deck_r:=(0..51)*{TRUE});
   List_Substitution(Refinement(Game_r),init_hands)==(deck_r:={0|->FALSE,1|->FALSE,2|->FALSE,3|->FALSE,4|->FALSE,5|->FALSE};player_one_hand_r:={0|->TRUE,1|->TRUE,2|->TRUE};player_two_hand_r:={3|->TRUE,4|->TRUE,5|->TRUE});
   List_Substitution(Refinement(Game_r),init_hands_points)==(player_one_points_r:=CARDS_POINTS(all_cards_v(0))+CARDS_POINTS(all_cards_v(1))+CARDS_POINTS(all_cards_v(2));player_two_points_r:=CARDS_POINTS(all_cards_v(3))+CARDS_POINTS(all_cards_v(4))+CARDS_POINTS(all_cards_v(5)));
@@ -161,8 +168,7 @@ THEORY ListParametersX IS
 END
 &
 THEORY ListInstanciatedParametersX IS
-  List_Instanciated_Parameters(Refinement(Game_r),Machine(Game_cards))==(?);
-  List_Instanciated_Parameters(Refinement(Game_r),Machine(Game_ctx))==(?)
+  List_Instanciated_Parameters(Refinement(Game_r),Machine(Game_cards))==(?)
 END
 &
 THEORY ListConstraintsX IS
@@ -207,20 +213,18 @@ THEORY ListPropertiesX IS
 END
 &
 THEORY ListSeenInfoX IS
-  Seen_Internal_List_Operations(Refinement(Game_r),Machine(Game_ctx))==(?);
+  Seen_Internal_List_Operations(Refinement(Game_r),Machine(Game_cards))==(?);
   Seen_Context_List_Enumerated(Refinement(Game_r))==(?);
   Seen_Context_List_Invariant(Refinement(Game_r))==(btrue);
   Seen_Context_List_Assertions(Refinement(Game_r))==(btrue);
   Seen_Context_List_Properties(Refinement(Game_r))==(btrue);
   Seen_List_Constraints(Refinement(Game_r))==(btrue);
-  Seen_List_Operations(Refinement(Game_r),Machine(Game_ctx))==(?);
-  Seen_Expanded_List_Invariant(Refinement(Game_r),Machine(Game_ctx))==(btrue);
-  Seen_Internal_List_Operations(Refinement(Game_r),Machine(Game_cards))==(?);
   Seen_List_Operations(Refinement(Game_r),Machine(Game_cards))==(?);
   Seen_Expanded_List_Invariant(Refinement(Game_r),Machine(Game_cards))==(btrue)
 END
 &
 THEORY ListANYVarX IS
+  List_ANY_Var(Refinement(Game_r),get_game_over)==(?);
   List_ANY_Var(Refinement(Game_r),init_deck)==(?);
   List_ANY_Var(Refinement(Game_r),init_hands)==(?);
   List_ANY_Var(Refinement(Game_r),init_hands_points)==(?);
@@ -231,16 +235,11 @@ THEORY ListANYVarX IS
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Refinement(Game_r)) == (? | ? | game_over_r,top_deck_points_r,top_deck_r,current_player_r,player_two_points_r,player_two_hand_r,player_one_points_r,player_one_hand_r,discart_r,deck_r,all_cards_v,all_cards_t | ? | init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play | ? | seen(Machine(Game_cards)),seen(Machine(Game_ctx)) | ? | Game_r);
+  List_Of_Ids(Refinement(Game_r)) == (? | ? | game_over_r,top_deck_points_r,top_deck_r,current_player_r,player_two_points_r,player_two_hand_r,player_one_points_r,player_one_hand_r,discart_r,deck_r,all_cards_v,all_cards_t | ? | get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play | ? | seen(Machine(Game_cards)) | ? | Game_r);
   List_Of_HiddenCst_Ids(Refinement(Game_r)) == (? | ?);
   List_Of_VisibleCst_Ids(Refinement(Game_r)) == (?);
   List_Of_VisibleVar_Ids(Refinement(Game_r)) == (? | ?);
   List_Of_Ids_SeenBNU(Refinement(Game_r)) == (?: ?);
-  List_Of_Ids(Machine(Game_ctx)) == (? | ? | ? | ? | ? | ? | ? | ? | Game_ctx);
-  List_Of_HiddenCst_Ids(Machine(Game_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Game_ctx)) == (?);
-  List_Of_VisibleVar_Ids(Machine(Game_ctx)) == (? | ?);
-  List_Of_Ids_SeenBNU(Machine(Game_ctx)) == (?: ?);
   List_Of_Ids(Machine(Game_cards)) == (CARDS_TYPES_ARRAY,CARDS_VALUES_ARRAY,CARDS_TYPES,CARDS_VALUE,PLAYERS,CLUBS,DIAMONDS,HEARTS,SPADES,NOTYPE,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,KING,QUEEN,JACK,ACE,NOVALUE,P_ONE,P_TWO,NOPLAYER | ? | ? | ? | ? | ? | ? | ? | Game_cards);
   List_Of_HiddenCst_Ids(Machine(Game_cards)) == (CARDS_POINTS,tuple_second,tuple_first,PLAYABLE,CARDS | ?);
   List_Of_VisibleCst_Ids(Machine(Game_cards)) == (CARDS_TYPES_ARRAY,CARDS_VALUES_ARRAY);
@@ -253,7 +252,7 @@ THEORY VariablesEnvX IS
 END
 &
 THEORY OperationsEnvX IS
-  Operations(Refinement(Game_r)) == (Type(player_two_play) == Cst(No_type,No_type);Type(player_one_play) == Cst(No_type,No_type);Type(reset_deck) == Cst(No_type,No_type);Type(update_top_deck) == Cst(No_type,No_type);Type(init_hands_points) == Cst(No_type,No_type);Type(init_hands) == Cst(No_type,No_type);Type(init_deck) == Cst(No_type,No_type))
+  Operations(Refinement(Game_r)) == (Type(player_two_play) == Cst(No_type,No_type);Type(player_one_play) == Cst(No_type,No_type);Type(reset_deck) == Cst(No_type,No_type);Type(update_top_deck) == Cst(No_type,No_type);Type(init_hands_points) == Cst(No_type,No_type);Type(init_hands) == Cst(No_type,No_type);Type(init_deck) == Cst(No_type,No_type);Type(get_game_over) == Cst(btype(BOOL,?,?),No_type))
 END
 &
 THEORY TCIntRdX IS

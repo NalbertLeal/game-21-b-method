@@ -1,10 +1,10 @@
+#include <stdio.h>
 /* WARNING if type checker is not performed, translation could contain errors ! */
 
 #include "game.h"
 
 /* Clause SEES */
 #include "Game_cards.h"
-#include "Game_ctx.h"
 
 /* Clause CONCRETE_CONSTANTS */
 /* Basic constants */
@@ -56,6 +56,11 @@ void game__INITIALISATION(void)
 }
 
 /* Clause OPERATIONS */
+
+void game__get_game_over(bool *bb)
+{
+    (*bb) = game__game_over_i;
+}
 
 void game__init_deck(void)
 {
@@ -351,17 +356,19 @@ void game__update_top_deck(void)
         bool value;
         
         ii = 0;
-        value = game__deck_i[ii];
         while((ii) <= (51))
         {
-            if(((game__top_deck_i) != (-1)) &&
+            value = game__deck_i[ii];
+            if((game__top_deck_i == -1) &&
             (value == true))
             {
                 game__top_deck_i = ii;
+                game__deck_i[ii] = false;
             }
             ii = ii+1;
         }
     }
+    printf("index of game__top_deck_i is %d\n", game__top_deck_i);
     {
         Game_cards__CARDS_VALUE value;
         
@@ -408,6 +415,7 @@ void game__update_top_deck(void)
             game__top_deck_points_i = 10;
         }
     }
+    printf("game__top_deck_points_i is %d\n", game__top_deck_points_i);
 }
 
 void game__reset_deck(void)
@@ -430,7 +438,9 @@ void game__player_one_play(void)
         value = game__top_deck_points_i+game__player_one_points_i;
         if((value) < (22))
         {
+            game__player_one_hand_i[game__top_deck_i] = true;
             game__player_one_points_i = value;
+            printf("1 have %d points\n", game__player_one_points_i);
             if(game__player_one_points_i == 21)
             {
                 game__game_over_i = true;
@@ -442,6 +452,7 @@ void game__player_one_play(void)
         }
         else
         {
+            printf("1 discarted  %d points\n",game__top_deck_points_i );
             game__discart_i[game__top_deck_i] = true;
             game__deck_i[game__top_deck_i] = false;
         }
@@ -459,7 +470,9 @@ void game__player_two_play(void)
         value = game__top_deck_points_i+game__player_two_points_i;
         if((value) < (22))
         {
+            game__player_two_hand_i[game__top_deck_i] = true;
             game__player_two_points_i = value;
+            printf("2 have %d points\n", game__player_two_points_i);
             if(game__player_two_points_i == 21)
             {
                 game__game_over_i = true;
@@ -471,6 +484,7 @@ void game__player_two_play(void)
         }
         else
         {
+            printf("2 discarted  %d points\n",game__top_deck_points_i );
             game__discart_i[game__top_deck_i] = true;
             game__deck_i[game__top_deck_i] = false;
         }
@@ -480,3 +494,20 @@ void game__player_two_play(void)
     game__top_deck_points_i = 0;
 }
 
+void start() {
+    game__INITIALISATION();
+    game__init_deck();
+    game__init_hands();
+    game__init_hands_points();
+
+    while (!game__game_over_i) {
+        game__update_top_deck();
+        game__reset_deck();
+
+        if (game__current_player_i == Game_cards__P_ONE) {
+            game__player_one_play();
+        } else {
+            game__player_two_play();
+        }
+    }
+}

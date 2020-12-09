@@ -7,7 +7,5 @@ Game_i [ label=" game\nGame_r\nGame_i " shape= box ]
 
 "Game_TEMP" -> "Game_cards_i" [style= dotted ]
 "Game_ctx_r" -> "Game_cards_i" [style= dotted ]
-"Game_i" -> "Game_ctx_i" [style= dotted ]
-"Game_i" -> "Game_ctx_r" [style= dotted ]
 "Game_i" -> "Game_cards_i" [style= dotted ]
 }

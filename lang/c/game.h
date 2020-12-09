@@ -6,7 +6,6 @@
 #include <string.h>
 /* Clause SEES */
 #include "Game_cards.h"
-#include "Game_ctx.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -25,6 +24,7 @@ extern void game__INITIALISATION(void);
 
 /* Clause OPERATIONS */
 
+extern void game__get_game_over(bool *bb);
 extern void game__init_deck(void);
 extern void game__init_hands(void);
 extern void game__init_hands_points(void);
@@ -32,6 +32,7 @@ extern void game__update_top_deck(void);
 extern void game__reset_deck(void);
 extern void game__player_one_play(void);
 extern void game__player_two_play(void);
+extern void  start(void);
 
 #ifdef __cplusplus
 }

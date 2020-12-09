@@ -5,7 +5,7 @@
 
 REFINEMENT Game_r
 REFINES game
-SEES Game_cards , Game_ctx
+SEES Game_cards
 ABSTRACT_VARIABLES
   all_cards_t ,
   all_cards_v ,
@@ -73,6 +73,8 @@ INITIALISATION
   top_deck_points_r := 0 ||
   game_over_r := FALSE
 OPERATIONS
+  bb <-- get_game_over = bb := game_over_r ;
+
   init_deck =
     BEGIN
       deck_r := ( 0 .. 51 ) * { TRUE }

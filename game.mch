@@ -54,11 +54,7 @@ INITIALISATION
   
   game_over := FALSE
 OPERATIONS
-//  pp <-- count_points(vv) = 
-//    PRE pp : NAT & vv : NAT
-//    THEN
-//      skip
-//    END;
+  bb <-- get_game_over = bb := game_over;
     
 	init_deck = 
 		PRE 
