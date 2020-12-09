@@ -77,6 +77,11 @@ INITIALISATION
 OPERATIONS
   bb <-- get_game_over = bb := game_over_i ;
 
+  cp <-- get_current_player = cp := current_player_i ;
+
+  pp <-- get_player_one_points = pp := player_one_points_i ;
+
+  pp <-- get_player_two_points = pp := player_two_points_i ;
 
   init_deck =
     BEGIN

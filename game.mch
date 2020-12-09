@@ -55,6 +55,12 @@ INITIALISATION
   game_over := FALSE
 OPERATIONS
   bb <-- get_game_over = bb := game_over;
+  
+  cp <-- get_current_player = cp := current_player;
+  
+  pp <-- get_player_one_points = pp := player_one_points;
+  
+  pp <-- get_player_two_points = pp := player_two_points;
     
 	init_deck = 
 		PRE 

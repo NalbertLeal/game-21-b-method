@@ -95,12 +95,15 @@ THEORY ListConstraintsX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Machine(game))==(get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play);
-  List_Operations(Machine(game))==(get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play)
+  Internal_List_Operations(Machine(game))==(get_game_over,get_current_player,get_player_one_points,get_player_two_points,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play);
+  List_Operations(Machine(game))==(get_game_over,get_current_player,get_player_one_points,get_player_two_points,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play)
 END
 &
 THEORY ListInputX IS
   List_Input(Machine(game),get_game_over)==(?);
+  List_Input(Machine(game),get_current_player)==(?);
+  List_Input(Machine(game),get_player_one_points)==(?);
+  List_Input(Machine(game),get_player_two_points)==(?);
   List_Input(Machine(game),init_deck)==(?);
   List_Input(Machine(game),init_hands)==(?);
   List_Input(Machine(game),init_hands_points)==(?);
@@ -112,6 +115,9 @@ END
 &
 THEORY ListOutputX IS
   List_Output(Machine(game),get_game_over)==(bb);
+  List_Output(Machine(game),get_current_player)==(cp);
+  List_Output(Machine(game),get_player_one_points)==(pp);
+  List_Output(Machine(game),get_player_two_points)==(pp);
   List_Output(Machine(game),init_deck)==(?);
   List_Output(Machine(game),init_hands)==(?);
   List_Output(Machine(game),init_hands_points)==(?);
@@ -123,6 +129,9 @@ END
 &
 THEORY ListHeaderX IS
   List_Header(Machine(game),get_game_over)==(bb <-- get_game_over);
+  List_Header(Machine(game),get_current_player)==(cp <-- get_current_player);
+  List_Header(Machine(game),get_player_one_points)==(pp <-- get_player_one_points);
+  List_Header(Machine(game),get_player_two_points)==(pp <-- get_player_two_points);
   List_Header(Machine(game),init_deck)==(init_deck);
   List_Header(Machine(game),init_hands)==(init_hands);
   List_Header(Machine(game),init_hands_points)==(init_hands_points);
@@ -136,6 +145,9 @@ THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
   List_Precondition(Machine(game),get_game_over)==(btrue);
+  List_Precondition(Machine(game),get_current_player)==(btrue);
+  List_Precondition(Machine(game),get_player_one_points)==(btrue);
+  List_Precondition(Machine(game),get_player_two_points)==(btrue);
   List_Precondition(Machine(game),init_deck)==(game_over = FALSE & deck = {} & discart = {} & player_one_hand = {} & player_two_hand = {});
   List_Precondition(Machine(game),init_hands)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand = {} & player_two_hand = {} & deck: seq(ran(deck)) & 3: 0..size(deck) & 3: 0..size(deck\|/3) & deck\|/3/|\3: seq(PLAYABLE) & deck\|/6: FIN(deck\|/6) & 6: 0..size(deck));
   List_Precondition(Machine(game),init_hands_points)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand/={} & player_two_hand/={} & player_one_points = 0 & player_two_points = 0 & size(player_one_hand) = 3 & size(player_two_hand) = 3);
@@ -153,8 +165,14 @@ THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(game),init_hands_points)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand/={} & player_two_hand/={} & player_one_points = 0 & player_two_points = 0 & size(player_one_hand) = 3 & size(player_two_hand) = 3 | player_one_points,player_two_points:=CARDS_POINTS(tuple_second(player_one_hand(1)))+CARDS_POINTS(tuple_second(player_one_hand(2)))+CARDS_POINTS(tuple_second(player_one_hand(3))),CARDS_POINTS(tuple_second(player_two_hand(1)))+CARDS_POINTS(tuple_second(player_two_hand(2)))+CARDS_POINTS(tuple_second(player_two_hand(3))));
   Expanded_List_Substitution(Machine(game),init_hands)==(game_over = FALSE & deck/={} & discart = {} & player_one_hand = {} & player_two_hand = {} & deck: seq(ran(deck)) & 3: 0..size(deck) & 3: 0..size(deck\|/3) & deck\|/3/|\3: seq(PLAYABLE) & deck\|/6: FIN(deck\|/6) & 6: 0..size(deck) | player_one_hand,player_two_hand,deck:=deck/|\3,deck\|/3/|\3,deck\|/6);
   Expanded_List_Substitution(Machine(game),init_deck)==(game_over = FALSE & deck = {} & discart = {} & player_one_hand = {} & player_two_hand = {} | @new_deck.(new_deck: perm(PLAYABLE) & size(new_deck)<=52 & new_deck: FIN(new_deck) ==> deck:=new_deck));
+  Expanded_List_Substitution(Machine(game),get_player_two_points)==(btrue | pp:=player_two_points);
+  Expanded_List_Substitution(Machine(game),get_player_one_points)==(btrue | pp:=player_one_points);
+  Expanded_List_Substitution(Machine(game),get_current_player)==(btrue | cp:=current_player);
   Expanded_List_Substitution(Machine(game),get_game_over)==(btrue | bb:=game_over);
   List_Substitution(Machine(game),get_game_over)==(bb:=game_over);
+  List_Substitution(Machine(game),get_current_player)==(cp:=current_player);
+  List_Substitution(Machine(game),get_player_one_points)==(pp:=player_one_points);
+  List_Substitution(Machine(game),get_player_two_points)==(pp:=player_two_points);
   List_Substitution(Machine(game),init_deck)==(ANY new_deck WHERE new_deck: perm(PLAYABLE) & size(new_deck)<=52 & new_deck: FIN(new_deck) THEN deck:=new_deck END);
   List_Substitution(Machine(game),init_hands)==(player_one_hand:=deck/|\3 || player_two_hand:=deck\|/3/|\3 || deck:=deck\|/6);
   List_Substitution(Machine(game),init_hands_points)==(player_one_points:=CARDS_POINTS(tuple_second(player_one_hand(1)))+CARDS_POINTS(tuple_second(player_one_hand(2)))+CARDS_POINTS(tuple_second(player_one_hand(3))) || player_two_points:=CARDS_POINTS(tuple_second(player_two_hand(1)))+CARDS_POINTS(tuple_second(player_two_hand(2)))+CARDS_POINTS(tuple_second(player_two_hand(3))));
@@ -213,6 +231,9 @@ END
 &
 THEORY ListANYVarX IS
   List_ANY_Var(Machine(game),get_game_over)==(?);
+  List_ANY_Var(Machine(game),get_current_player)==(?);
+  List_ANY_Var(Machine(game),get_player_one_points)==(?);
+  List_ANY_Var(Machine(game),get_player_two_points)==(?);
   List_ANY_Var(Machine(game),init_deck)==(Var(new_deck) == SetOf(btype(INTEGER,?,?)*(etype(CARDS_TYPES,?,?)*etype(CARDS_VALUE,?,?))));
   List_ANY_Var(Machine(game),init_hands)==(?);
   List_ANY_Var(Machine(game),init_hands_points)==(?);
@@ -223,7 +244,7 @@ THEORY ListANYVarX IS
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(game)) == (? | ? | game_over,player_two_points,player_two_hand,player_one_points,player_one_hand,current_player,top_deck_points,top_deck,discart,deck | ? | get_game_over,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play | ? | seen(Machine(Game_cards)) | ? | game);
+  List_Of_Ids(Machine(game)) == (? | ? | game_over,player_two_points,player_two_hand,player_one_points,player_one_hand,current_player,top_deck_points,top_deck,discart,deck | ? | get_game_over,get_current_player,get_player_one_points,get_player_two_points,init_deck,init_hands,init_hands_points,update_top_deck,reset_deck,player_one_play,player_two_play | ? | seen(Machine(Game_cards)) | ? | game);
   List_Of_HiddenCst_Ids(Machine(game)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(game)) == (?);
   List_Of_VisibleVar_Ids(Machine(game)) == (? | ?);
@@ -240,8 +261,8 @@ THEORY VariablesEnvX IS
 END
 &
 THEORY OperationsEnvX IS
-  Operations(Machine(game)) == (Type(player_two_play) == Cst(No_type,No_type);Type(player_one_play) == Cst(No_type,No_type);Type(reset_deck) == Cst(No_type,No_type);Type(update_top_deck) == Cst(No_type,No_type);Type(init_hands_points) == Cst(No_type,No_type);Type(init_hands) == Cst(No_type,No_type);Type(init_deck) == Cst(No_type,No_type);Type(get_game_over) == Cst(btype(BOOL,?,?),No_type));
-  Observers(Machine(game)) == (Type(get_game_over) == Cst(btype(BOOL,?,?),No_type))
+  Operations(Machine(game)) == (Type(player_two_play) == Cst(No_type,No_type);Type(player_one_play) == Cst(No_type,No_type);Type(reset_deck) == Cst(No_type,No_type);Type(update_top_deck) == Cst(No_type,No_type);Type(init_hands_points) == Cst(No_type,No_type);Type(init_hands) == Cst(No_type,No_type);Type(init_deck) == Cst(No_type,No_type);Type(get_player_two_points) == Cst(btype(INTEGER,?,?),No_type);Type(get_player_one_points) == Cst(btype(INTEGER,?,?),No_type);Type(get_current_player) == Cst(etype(PLAYERS,?,?),No_type);Type(get_game_over) == Cst(btype(BOOL,?,?),No_type));
+  Observers(Machine(game)) == (Type(get_player_two_points) == Cst(btype(INTEGER,?,?),No_type);Type(get_player_one_points) == Cst(btype(INTEGER,?,?),No_type);Type(get_current_player) == Cst(etype(PLAYERS,?,?),No_type);Type(get_game_over) == Cst(btype(BOOL,?,?),No_type))
 END
 &
 THEORY TCIntRdX IS
